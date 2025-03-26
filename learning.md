@@ -1,7 +1,4 @@
 # Guía Completa de Aprendizaje para Programación Competitiva
-
-A continuación, se presenta un camino de estudio exhaustivo en C++ y programación competitiva, estructurado en temas con ejercicios prácticos para reforzar tus conocimientos y habilidades.
-
 ---
 
 ## Índice de Contenidos
