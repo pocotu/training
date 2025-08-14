@@ -1,0 +1,84 @@
+# Meta Template for Competitive Programming Problems
+# This file contains the metadata structure for all problems in the repository
+
+# Basic Information (REQUIRED)
+id: "[problem_id]"                    # Format: "001" for basic, "101" for intermediate, "201" for advanced
+title: "[Problem Title]"              # Original problem title
+difficulty: "[difficulty_level]"      # Options: "basic" | "intermediate" | "advanced"
+
+# Problem Classification (REQUIRED)
+tags: 
+  - "[primary_tag]"                   # Primary algorithm/data structure
+  - "[secondary_tag]"                 # Secondary concept
+  - "[additional_tag]"                # Additional relevant tags
+
+# Time and Source Information (REQUIRED)
+time_minutes: [estimated_time]        # Estimated solve time in minutes (15, 30, 45, 60, 90, 120)
+source: "[platform]"                 # Options: "leetcode" | "codeforces" | "hackerrank" | "atcoder" | "other"
+problem_id: "[original_id]"          # Original problem ID from the platform (e.g., "1", "1234A")
+url: "[problem_url]"                 # Direct URL to the original problem
+
+# Contest Information (OPTIONAL - only for contest problems)
+contest_info:
+  type: "[contest_type]"              # Options: "weekly" | "biweekly" | "daily" | "div2" | "div3" | "educational"
+  number: "[contest_number]"          # Contest number (e.g., "380", "915")
+  position: "[problem_position]"      # Problem position in contest (A, B, C, D for CF; 1, 2, 3, 4 for LC)
+  date: "[contest_date]"              # Contest date in YYYY-MM-DD format
+
+# Problem Characteristics (OPTIONAL)
+complexity:
+  time: "[time_complexity]"           # Expected time complexity (e.g., "O(n)", "O(n log n)")
+  space: "[space_complexity]"         # Expected space complexity (e.g., "O(1)", "O(n)")
+
+# Learning Objectives (OPTIONAL)
+learning_objectives:
+  - "[objective_1]"                   # What the problem teaches
+  - "[objective_2]"                   # Key concepts to learn
+  - "[objective_3]"                   # Skills to develop
+
+# Prerequisites (OPTIONAL)
+prerequisites:
+  - "[prerequisite_1]"                # Required knowledge
+  - "[prerequisite_2]"                # Recommended to know beforehand
+
+# Difficulty Rating (OPTIONAL)
+rating:
+  platform_rating: [number]          # Official platform rating if available
+  estimated_rating: [number]         # Our estimated rating (800-3500 for CF scale)
+
+# Solving Statistics (OPTIONAL - for tracking)
+stats:
+  acceptance_rate: [percentage]       # Platform acceptance rate if known
+  solved_count: [number]              # Number of times solved by users
+
+# Related Problems (OPTIONAL)
+related_problems:
+  - id: "[related_id]"               # ID of related problem in our repository
+    relation: "[relation_type]"       # "similar", "prerequisite", "follow_up", "variant"
+  - id: "[related_id_2]"
+    relation: "[relation_type]"
+
+# Additional Notes (OPTIONAL)
+notes: "[additional_notes]"           # Any special notes about the problem
+
+# Template Usage Instructions:
+# 1. Replace all [bracketed_values] with actual data
+# 2. Remove optional sections if not needed
+# 3. Ensure difficulty matches folder structure (basic/intermediate/advanced)
+# 4. Use official tags from the repository tag list
+# 5. Validate YAML syntax before saving
+# 6. For contest problems, include contest_info section
+# 7. Time estimation should be realistic for the target difficulty level
+
+# Valid Tag Options:
+# Arrays: array, two-pointer, sliding-window, sorting
+# Hash/Maps: hashmap, set, frequency
+# Stacks/Queues: stack, queue, monotonic-stack, deque
+# Trees/Graphs: tree, binary-tree, bst, graph, dfs, bfs, topological-sort
+# Dynamic Programming: dp, memoization, tabulation
+# Algorithms: greedy, backtracking, binary-search, divide-conquer
+# Math: math, number-theory, combinatorics, probability, geometry
+# Strings: string, pattern-matching, kmp, rolling-hash
+# Advanced: segment-tree, fenwick-tree, trie, union-find, heap
+# Linked Lists: linked-list, fast-slow-pointer
+# Matrix: matrix, 2d-array, simulation

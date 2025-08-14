@@ -1,0 +1,17 @@
+# Metadata del problema 3
+id: "0003"
+title: "Longest Substring Without Repeating Characters"
+slug: "longest-substring-without-repeating-characters"
+difficulty: "medium"
+source: "LeetCode"
+url: "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+date_added: "2025-08-14"
+tags: ["Hash Table", "String", "Sliding Window"]
+category: "algorithm"
+status: "pending"
+attempts: 0
+solved: false
+notes: ""
+time_limit: "1s"
+memory_limit: "256MB"
+author: "LeetCode"

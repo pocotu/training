@@ -1,0 +1,17 @@
+# Metadata del problema 4
+id: "0004"
+title: "Median of Two Sorted Arrays"
+slug: "median-of-two-sorted-arrays"
+difficulty: "hard"
+source: "LeetCode"
+url: "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+date_added: "2025-08-14"
+tags: ["Array", "Binary Search", "Divide and Conquer"]
+category: "algorithm"
+status: "pending"
+attempts: 0
+solved: false
+notes: ""
+time_limit: "1s"
+memory_limit: "256MB"
+author: "LeetCode"

@@ -1,0 +1,41 @@
+"""
+Longest Substring Without Repeating Characters
+Difficulty: Medium
+Source: LeetCode #3
+
+Given a string s, find the length of the longest substring without repeating characters....
+"""
+
+def solution():
+    """
+    Main solution function.
+    
+    Returns:
+        Result of the problem
+    """
+    # TODO: Implement solution
+    pass
+
+
+def solution_optimized():
+    """
+    Optimized solution (if applicable).
+    
+    Returns:
+        Result of the problem
+    """
+    # TODO: Implement optimized solution
+    pass
+
+
+# Example usage
+if __name__ == "__main__":
+    # Test with examples from problem description
+    print("Testing solution...")
+    
+    # TODO: Add test cases based on examples
+    # Example 1
+    result1 = solution()
+    print(f"Result 1: {result1}")
+    
+    print("All tests passed!")

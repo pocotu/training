@@ -1,0 +1,17 @@
+# Metadata del problema 2
+id: "0002"
+title: "Add Two Numbers"
+slug: "add-two-numbers"
+difficulty: "medium"
+source: "LeetCode"
+url: "https://leetcode.com/problems/add-two-numbers/"
+date_added: "2025-08-14"
+tags: ["Linked List", "Math", "Recursion"]
+category: "algorithm"
+status: "pending"
+attempts: 0
+solved: false
+notes: ""
+time_limit: "1s"
+memory_limit: "256MB"
+author: "LeetCode"
