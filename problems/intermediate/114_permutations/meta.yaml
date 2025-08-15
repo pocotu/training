@@ -1,10 +1,8 @@
 id: "114"
 title: "Permutations"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "46"
-category: "Array"
-time_complexity: "O(sum(P(n,k)))"
-space_complexity: "O(n)"
-solved: "false"
+difficulty: "intermediate"
+tags:
+time_minutes: 45        # Estimated solve time for intermediate level
+source: "leetcode"
+problem_id: "46"
+url: "https://leetcode.com/problems/problem-46/"

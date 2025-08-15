@@ -1,0 +1,16 @@
+id: "045"
+title: "Intersection of Two Arrays II"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "350"
+url: "https://leetcode.com/problems/intersection-of-two-arrays-ii/"
+tags: ["array", "hash-table", "two-pointers", "binary-search", "sorting"]
+time_minutes: 20
+complexity:
+  time: "O(m + n)"
+  space: "O(min(m,n))"
+learning_objectives:
+  - "Master frequency counting with hashmaps"
+  - "Practice array intersection algorithms"
+  - "Understand space optimization techniques"
+  - "Learn multiple solution approaches"

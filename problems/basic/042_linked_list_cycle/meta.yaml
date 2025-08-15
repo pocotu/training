@@ -1,0 +1,15 @@
+id: "042"
+title: "Linked List Cycle"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "141"
+url: "https://leetcode.com/problems/linked-list-cycle/"
+tags: ["hash-table", "linked-list", "two-pointers"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master Floyd's cycle detection algorithm"
+  - "Practice two-pointer technique"
+  - "Understand cycle detection patterns"

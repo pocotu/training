@@ -1,0 +1,8 @@
+id: "123"
+title: "Maximum Subarray"
+difficulty: "intermediate"
+tags:
+time_minutes: 45        # Estimated solve time for intermediate level
+source: "leetcode"
+problem_id: "53"
+url: "https://leetcode.com/problems/problem-53/"

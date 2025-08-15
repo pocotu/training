@@ -1,0 +1,15 @@
+id: "041"
+title: "Single Number"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "136"
+url: "https://leetcode.com/problems/single-number/"
+tags: ["array", "bit-manipulation"]
+time_minutes: 15
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master XOR bit manipulation"
+  - "Understand mathematical properties"
+  - "Practice constant space algorithms"

@@ -1,10 +1,6 @@
 id: "106"
 title: "Container With Most Water"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "11"
-category: "Array"
-time_complexity: "O(n)"
-space_complexity: "O(1)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

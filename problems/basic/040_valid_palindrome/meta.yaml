@@ -1,0 +1,15 @@
+id: "040"
+title: "Valid Palindrome"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "125"
+url: "https://leetcode.com/problems/valid-palindrome/"
+tags: ["two-pointers", "string"]
+time_minutes: 15
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master two-pointer technique"
+  - "Practice string preprocessing"
+  - "Understand palindrome validation"

@@ -1,0 +1,15 @@
+id: "036"
+title: "Path Sum"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "112"
+url: "https://leetcode.com/problems/path-sum/"
+tags: ["tree", "depth-first-search", "binary-tree"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master path sum algorithms"
+  - "Practice DFS with target tracking"
+  - "Understand leaf node conditions"

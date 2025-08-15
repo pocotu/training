@@ -1,64 +1,64 @@
-# Combination Sum
+# [122] Combination Sum
 
-**Difficulty:** Medium  
-**Source:** LeetCode  
-**ID:** 113
+## Problema
+[TODO: Copiar el enunciado completo del problema desde LeetCode]
 
-## Problem Description
+Visita: https://leetcode.com/problems/problem-39/
 
-Work with array data structures to solve this problem efficiently.
-
-### Task
-
-Given an array, solve Combination Sum.
-
-## Examples
-
-### Example 1
-
-```
-Input: nums = [example array]
-Output: [result]
-Explanation: [detailed explanation]
-```
-
-### Example 2
-
-```
-Input: nums = [example array]
-Output: [result]
-Explanation: [detailed explanation]
-```
+## Input/Output
+- **Input**: [TODO: Describir formato de entrada]
+- **Output**: [TODO: Describir formato de salida esperado]
 
 ## Constraints
+- [TODO: Copiar constraints desde LeetCode]
+- Ejemplo: n ≤ 10^4
+- Ejemplo: values ≤ 10^9
 
-- `1 <= nums.length <= 10^4`
-- Array elements are within reasonable range
-- Consider duplicate elements
+## Ejemplos
 
-## Approach
+### Ejemplo 1:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
 
-### Key Insights
+### Ejemplo 2:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
 
-1. Analyze array patterns
-2. Consider sorting or hashing
-3. Optimize for time/space complexity
+### Ejemplo 3 (Edge Case):
+```
+Input: [TODO: Agregar caso límite]
+Output: [TODO: Salida esperada]
+```
 
-### Algorithm
+## Explicación
+[TODO: Explicar el algoritmo y la lógica de solución]
 
-1. Initialize necessary data structures
-2. Iterate through the array
-3. Apply the core logic
-4. Return the result
+## Hints
+- [TODO: Agregar pista sobre estructura de datos]
+- [TODO: Agregar pista sobre algoritmo]
+- [TODO: Agregar pista sobre complejidad]
 
-## Complexity Analysis
+## Tags
+[TODO: Agregar tags apropiados], leetcode
 
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(1)
+## Notas Adicionales
+- **Complejidad de tiempo esperada**: O(?)
+- **Complejidad de espacio esperada**: O(?)
+- **Dificultad**: 39
+- **Conceptos clave**: [TODO: Enumerar conceptos a practicar]
 
-## Related Topics
+---
 
-- Array
-- Two Pointers
-- Hash Table
-- Sorting
+### Instrucciones para completar:
+1. Visitar https://leetcode.com/problems/problem-39/
+2. Copiar el enunciado completo en la sección "Problema"
+3. Actualizar Input/Output con información específica
+4. Copiar constraints exactos de LeetCode
+5. Copiar todos los ejemplos de LeetCode
+6. Agregar explicación detallada del approach
+7. Incluir tags apropiados del repositorio
+8. Actualizar complejidades después de resolver

@@ -1,10 +1,6 @@
 id: "101"
 title: "Add Two Numbers"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["math"]"
-source_id: "2"
-category: "Linked List"
-time_complexity: "O(max(m,n))"
-space_complexity: "O(max(m,n))"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["math"]
+time_minutes: 45

@@ -1,0 +1,15 @@
+id: "037"
+title: "Pascal's Triangle"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "118"
+url: "https://leetcode.com/problems/pascals-triangle/"
+tags: ["array", "dynamic-programming"]
+time_minutes: 15
+complexity:
+  time: "O(numRows²)"
+  space: "O(numRows²)"
+learning_objectives:
+  - "Understand Pascal's Triangle properties"
+  - "Practice dynamic programming patterns"
+  - "Master 2D array construction"

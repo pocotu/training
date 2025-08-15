@@ -1,10 +1,6 @@
 id: "117"
 title: "Pow(x, n)"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "50"
-category: "Math"
-time_complexity: "O(log n)"
-space_complexity: "O(log n)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

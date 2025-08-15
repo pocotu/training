@@ -1,0 +1,15 @@
+id: "032"
+title: "Maximum Depth of Binary Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "104"
+url: "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+tags: ["tree", "depth-first-search", "breadth-first-search", "binary-tree"]
+time_minutes: 15
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master tree depth calculations"
+  - "Practice recursive tree algorithms"
+  - "Understand DFS vs BFS approaches"

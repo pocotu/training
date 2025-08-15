@@ -1,0 +1,6 @@
+id: "F042"
+title: "Factorial Recursive"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "recursion", "math", "algorithms"]
+time_minutes: 10

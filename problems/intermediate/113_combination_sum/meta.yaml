@@ -1,10 +1,8 @@
 id: "113"
 title: "Combination Sum"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "39"
-category: "Array"
-time_complexity: "O(n^(t/m))"
-space_complexity: "O(t/m)"
-solved: "false"
+difficulty: "intermediate"
+tags:
+time_minutes: 45        # Estimated solve time for intermediate level
+source: "leetcode"
+problem_id: "39"
+url: "https://leetcode.com/problems/problem-39/"

@@ -1,10 +1,6 @@
 id: "105"
 title: "Zigzag Conversion"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "6"
-category: "String"
-time_complexity: "O(n)"
-space_complexity: "O(n)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

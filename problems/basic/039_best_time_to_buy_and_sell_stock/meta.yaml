@@ -1,0 +1,15 @@
+id: "039"
+title: "Best Time to Buy and Sell Stock"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "121"
+url: "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+tags: ["array", "dynamic-programming"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master single-pass optimization"
+  - "Practice tracking minimum/maximum"
+  - "Understand profit calculation patterns"

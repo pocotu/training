@@ -1,10 +1,6 @@
 id: "108"
 title: "Letter Combinations of a Phone Number"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "17"
-category: "String"
-time_complexity: "O(3^m * 4^n)"
-space_complexity: "O(3^m * 4^n)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

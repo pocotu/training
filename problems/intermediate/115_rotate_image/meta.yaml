@@ -1,10 +1,6 @@
 id: "115"
 title: "Rotate Image"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "48"
-category: "Array"
-time_complexity: "O(n^2)"
-space_complexity: "O(1)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

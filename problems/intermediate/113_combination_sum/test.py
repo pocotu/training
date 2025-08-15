@@ -1,89 +1,102 @@
-#!/usr/bin/env python3
 """
-Unit tests for Combination Sum (Problem 113)
+Test cases for LeetCode Problem 39
+Problem ID: 122
 
-Tests array manipulation and algorithms with comprehensive test cases.
+This file contains test cases for the LeetCode problem.
+Update the test cases with actual examples from the problem statement.
+
+Usage:
+    pytest test.py -v
 """
 
-import unittest
+import pytest
 import sys
-from pathlib import Path
+import os
 
-# Add the parent directory to sys.path to import solution
-sys.path.append(str(Path(__file__).parent))
+# Add the current directory to the Python path to import solution
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-try:
-    from solution import CombinationSum
-except ImportError:
-    # Fallback if solution file doesn't exist yet
-    class CombinationSum:
-        def combination_sum(self, nums):
-            raise NotImplementedError("Solution not implemented yet")
+# TODO: Uncomment and update import based on your solution function name
+# from solution import solution_function_name
 
-
-class TestCombinationSum(unittest.TestCase):
-    """Test cases for Combination Sum."""
+class TestLeetCode39:
+    """Test class for LeetCode Problem 39"""
     
-    def setUp(self):
-        """Set up test fixtures before each test method."""
-        self.solution = CombinationSum()
-    
-    def test_basic_array(self):
-        """Test basic array functionality."""
-        nums = [1, 2, 3, 4, 5]
-        result = self.solution.combination_sum(nums)
-        # Adjust expected result based on specific problem
-        self.assertIsNotNone(result, "Should return a valid result")
-    
-    def test_empty_array(self):
-        """Test edge case with empty array."""
-        nums = []
-        result = self.solution.combination_sum(nums)
-        # Adjust based on problem requirements
-        self.assertIsNotNone(result, "Should handle empty array")
-    
-    def test_single_element(self):
-        """Test edge case with single element."""
-        nums = [42]
-        result = self.solution.combination_sum(nums)
-        self.assertIsNotNone(result, "Should handle single element")
-    
-    def test_duplicate_elements(self):
-        """Test array with duplicate elements."""
-        nums = [1, 1, 2, 2, 3, 3]
-        result = self.solution.combination_sum(nums)
-        self.assertIsNotNone(result, "Should handle duplicates")
-    
-    def test_sorted_array(self):
-        """Test with sorted array."""
-        nums = [1, 2, 3, 4, 5, 6]
-        result = self.solution.combination_sum(nums)
-        self.assertIsNotNone(result, "Should handle sorted array")
-    
-    def test_reverse_sorted_array(self):
-        """Test with reverse sorted array."""
-        nums = [6, 5, 4, 3, 2, 1]
-        result = self.solution.combination_sum(nums)
-        self.assertIsNotNone(result, "Should handle reverse sorted array")
-    
-    def test_negative_numbers(self):
-        """Test with negative numbers."""
-        nums = [-3, -1, 0, 1, 3]
-        result = self.solution.combination_sum(nums)
-        self.assertIsNotNone(result, "Should handle negative numbers")
-    
-    def test_large_array(self):
-        """Test performance with large array."""
-        nums = list(range(10000))
+    def test_example_1(self):
+        """Test example 1 from LeetCode"""
+        # TODO: Update with actual test case from LeetCode
+        # Example:
+        # input_data = example_input_1
+        # expected_output = expected_result_1
+        # assert solution_function_name(input_data) == expected_output
         
-        import time
-        start_time = time.time()
-        result = self.solution.combination_sum(nums)
-        end_time = time.time()
+        # Placeholder assertion - remove when implementing actual tests
+        assert True, "Replace this with actual test case from LeetCode example 1"
+    
+    def test_example_2(self):
+        """Test example 2 from LeetCode"""
+        # TODO: Update with actual test case from LeetCode
+        assert True, "Replace this with actual test case from LeetCode example 2"
+    
+    def test_edge_cases(self):
+        """Test edge cases"""
+        # TODO: Add edge cases like:
+        # - Minimum input size
+        # - Maximum input size (within constraints)
+        # - Empty inputs (if applicable)
+        # - Single element inputs
+        # - Boundary values
         
-        self.assertLess(end_time - start_time, 1.0, "Should be efficient")
-        self.assertIsNotNone(result, "Should handle large arrays")
+        assert True, "Add edge cases based on problem constraints"
+    
+    def test_corner_cases(self):
+        """Test corner cases specific to this problem"""
+        # TODO: Add problem-specific corner cases like:
+        # - Special values (zeros, negatives, etc.)
+        # - Duplicate values
+        # - Sorted/reverse-sorted inputs
+        # - Any problem-specific edge conditions
+        
+        assert True, "Add corner cases specific to this LeetCode problem"
 
+# TODO: Uncomment when you have a solution implemented
+# def test_solution_exists():
+#     """Test that solution file and function exist"""
+#     try:
+#         from solution import solution_function_name
+#         assert callable(solution_function_name)
+#     except ImportError:
+#         pytest.fail("solution.py file or solution function not found")
 
 if __name__ == "__main__":
-    unittest.main(verbosity=2)
+    # Run tests when script is executed directly
+    pytest.main([__file__, "-v"])
+
+"""
+Instructions for completing the tests:
+
+1. COPY EXAMPLES FROM LEETCODE:
+   - Go to https://leetcode.com/problems/problem-39/
+   - Copy all provided examples into test_example_1, test_example_2, etc.
+
+2. UPDATE IMPORTS:
+   - Create solution.py with your solution function
+   - Update the import statement with the correct function name
+
+3. ADD EDGE CASES:
+   - Test minimum and maximum input sizes
+   - Test boundary values from constraints
+   - Test empty inputs if applicable
+
+4. ADD CORNER CASES:
+   - Test problem-specific edge conditions
+   - Consider special values and patterns
+
+5. RUN TESTS:
+   - Run: pytest test.py -v
+   - Ensure all tests pass with your solution
+
+6. PERFORMANCE TESTING (optional):
+   - Add tests with large inputs to verify time complexity
+   - Test with maximum constraint values
+"""

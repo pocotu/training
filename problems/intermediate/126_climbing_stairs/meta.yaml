@@ -1,0 +1,8 @@
+id: "126"
+title: "Climbing Stairs"
+difficulty: "intermediate"
+tags:
+time_minutes: 45        # Estimated solve time for intermediate level
+source: "leetcode"
+problem_id: "70"
+url: "https://leetcode.com/problems/problem-70/"

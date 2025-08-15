@@ -1,0 +1,6 @@
+id: "F060"
+title: "Simple Calculator"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "math", "operations", "conditionals"]
+time_minutes: 10

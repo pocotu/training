@@ -1,0 +1,15 @@
+id: "044"
+title: "Binary Tree Postorder Traversal"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "145"
+url: "https://leetcode.com/problems/binary-tree-postorder-traversal/"
+tags: ["stack", "tree", "depth-first-search", "binary-tree"]
+time_minutes: 25
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master postorder traversal patterns"
+  - "Practice complex iterative tree algorithms"
+  - "Understand all DFS traversal types"

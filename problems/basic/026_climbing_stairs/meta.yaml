@@ -1,0 +1,15 @@
+id: "026"
+title: "Climbing Stairs"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "70"
+url: "https://leetcode.com/problems/climbing-stairs/"
+tags: ["dynamic-programming", "fibonacci", "math", "memoization"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master dynamic programming fundamentals"
+  - "Understand Fibonacci sequence applications"
+  - "Practice space optimization techniques"

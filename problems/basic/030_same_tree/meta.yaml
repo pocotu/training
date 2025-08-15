@@ -1,0 +1,15 @@
+id: "030"
+title: "Same Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "100"
+url: "https://leetcode.com/problems/same-tree/"
+tags: ["tree", "depth-first-search", "binary-tree"]
+time_minutes: 15
+complexity:
+  time: "O(min(m,n))"
+  space: "O(min(m,n))"
+learning_objectives:
+  - "Practice tree comparison algorithms"
+  - "Master recursive tree traversal"
+  - "Understand base case handling"

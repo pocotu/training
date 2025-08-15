@@ -1,0 +1,15 @@
+id: "035"
+title: "Minimum Depth of Binary Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "111"
+url: "https://leetcode.com/problems/minimum-depth-of-binary-tree/"
+tags: ["tree", "depth-first-search", "breadth-first-search", "binary-tree"]
+time_minutes: 15
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master minimum depth calculations"
+  - "Understand BFS vs DFS for shortest path"
+  - "Practice leaf node identification"

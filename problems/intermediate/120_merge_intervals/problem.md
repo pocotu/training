@@ -1,57 +1,64 @@
-# Merge Intervals
+# [127] Merge Intervals
 
-## Problem Description
+## Problema
+[TODO: Copiar el enunciado completo del problema desde LeetCode]
 
-Given an array of `intervals` where `intervals[i] = [starti, endi]`, merge all overlapping intervals, and return *an array of the non-overlapping intervals that cover all the intervals in the input*.
+Visita: https://leetcode.com/problems/problem-56/
 
-## Examples
-
-### Example 1:
-```
-Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
-Output: [[1,6],[8,10],[15,18]]
-Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].
-```
-
-### Example 2:
-```
-Input: intervals = [[1,4],[4,5]]
-Output: [[1,5]]
-Explanation: Intervals [1,4] and [4,5] are considered overlapping.
-```
+## Input/Output
+- **Input**: [TODO: Describir formato de entrada]
+- **Output**: [TODO: Describir formato de salida esperado]
 
 ## Constraints
+- [TODO: Copiar constraints desde LeetCode]
+- Ejemplo: n ≤ 10^4
+- Ejemplo: values ≤ 10^9
 
-- `1 <= intervals.length <= 10^4`
-- `intervals[i].length == 2`
-- `0 <= starti <= endi <= 10^4`
+## Ejemplos
+
+### Ejemplo 1:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
+
+### Ejemplo 2:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
+
+### Ejemplo 3 (Edge Case):
+```
+Input: [TODO: Agregar caso límite]
+Output: [TODO: Salida esperada]
+```
+
+## Explicación
+[TODO: Explicar el algoritmo y la lógica de solución]
 
 ## Hints
+- [TODO: Agregar pista sobre estructura de datos]
+- [TODO: Agregar pista sobre algoritmo]
+- [TODO: Agregar pista sobre complejidad]
 
-1. Sort intervals by start time.
-2. Iterate through sorted intervals.
-3. If current interval overlaps with the last merged interval, merge them.
-4. Otherwise, add current interval to result.
+## Tags
+[TODO: Agregar tags apropiados], leetcode
 
-## Related Topics
+## Notas Adicionales
+- **Complejidad de tiempo esperada**: O(?)
+- **Complejidad de espacio esperada**: O(?)
+- **Dificultad**: 56
+- **Conceptos clave**: [TODO: Enumerar conceptos a practicar]
 
-- Array
-- Sorting
+---
 
-## Companies
-
-- Facebook
-- Microsoft
-- Amazon
-- Google
-- LinkedIn
-
-## Algorithm
-
-1. **Sort**: Sort intervals by start time
-2. **Iterate**: Go through each interval
-3. **Merge**: If overlap with last merged interval, merge them
-4. **Add**: Otherwise, add to result
-
-### Overlap Condition
-Two intervals [a,b] and [c,d] overlap if: `b >= c` (assuming a <= c after sorting)
+### Instrucciones para completar:
+1. Visitar https://leetcode.com/problems/problem-56/
+2. Copiar el enunciado completo en la sección "Problema"
+3. Actualizar Input/Output con información específica
+4. Copiar constraints exactos de LeetCode
+5. Copiar todos los ejemplos de LeetCode
+6. Agregar explicación detallada del approach
+7. Incluir tags apropiados del repositorio
+8. Actualizar complejidades después de resolver

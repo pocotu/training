@@ -1,0 +1,15 @@
+id: "043"
+title: "Binary Tree Preorder Traversal"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "144"
+url: "https://leetcode.com/problems/binary-tree-preorder-traversal/"
+tags: ["stack", "tree", "depth-first-search", "binary-tree"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master preorder traversal patterns"
+  - "Practice recursive and iterative approaches"
+  - "Understand DFS traversal orders"

@@ -1,10 +1,6 @@
 id: "118"
 title: "Spiral Matrix"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "54"
-category: "Array"
-time_complexity: "O(m * n)"
-space_complexity: "O(1)"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

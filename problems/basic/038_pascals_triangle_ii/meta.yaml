@@ -1,0 +1,15 @@
+id: "038"
+title: "Pascal's Triangle II"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "119"
+url: "https://leetcode.com/problems/pascals-triangle-ii/"
+tags: ["array", "dynamic-programming"]
+time_minutes: 15
+complexity:
+  time: "O(rowIndex²)"
+  space: "O(rowIndex)"
+learning_objectives:
+  - "Master space-optimized DP"
+  - "Practice in-place array updates"
+  - "Understand Pascal's Triangle formulas"

@@ -1,10 +1,6 @@
 id: "103"
 title: "Median of Two Sorted Arrays"
-difficulty: "Hard"
-source: "LeetCode"
-tags: "["array", "challenging"]"
-source_id: "4"
-category: "Array"
-time_complexity: "O(log(min(m,n)))"
-space_complexity: "O(1)"
-solved: "false"
+difficulty: "advanced"
+source: "leetcode"
+tags: ["array", "challenging"]
+time_minutes: 45

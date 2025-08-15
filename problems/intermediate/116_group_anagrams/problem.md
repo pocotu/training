@@ -1,65 +1,64 @@
-# Group Anagrams
+# [124] Group Anagrams
 
-## Problem Description
+## Problema
+[TODO: Copiar el enunciado completo del problema desde LeetCode]
 
-Given an array of strings `strs`, group the anagrams together. You can return the answer in **any order**.
+Visita: https://leetcode.com/problems/problem-49/
 
-An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-
-## Examples
-
-### Example 1:
-```
-Input: strs = ["eat","tea","tan","ate","nat","bat"]
-Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
-```
-
-### Example 2:
-```
-Input: strs = [""]
-Output: [[""]]
-```
-
-### Example 3:
-```
-Input: strs = ["a"]
-Output: [["a"]]
-```
+## Input/Output
+- **Input**: [TODO: Describir formato de entrada]
+- **Output**: [TODO: Describir formato de salida esperado]
 
 ## Constraints
+- [TODO: Copiar constraints desde LeetCode]
+- Ejemplo: n ≤ 10^4
+- Ejemplo: values ≤ 10^9
 
-- `1 <= strs.length <= 10^4`
-- `0 <= strs[i].length <= 100`
-- `strs[i]` consists of lowercase English letters only.
+## Ejemplos
+
+### Ejemplo 1:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
+
+### Ejemplo 2:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
+
+### Ejemplo 3 (Edge Case):
+```
+Input: [TODO: Agregar caso límite]
+Output: [TODO: Salida esperada]
+```
+
+## Explicación
+[TODO: Explicar el algoritmo y la lógica de solución]
 
 ## Hints
+- [TODO: Agregar pista sobre estructura de datos]
+- [TODO: Agregar pista sobre algoritmo]
+- [TODO: Agregar pista sobre complejidad]
 
-1. Two strings are anagrams if they have the same character count.
-2. Sorting the characters of each string gives a canonical form.
-3. Use a hash map to group strings with the same canonical form.
-4. Alternative: Use character frequency as the key.
+## Tags
+[TODO: Agregar tags apropiados], leetcode
 
-## Related Topics
+## Notas Adicionales
+- **Complejidad de tiempo esperada**: O(?)
+- **Complejidad de espacio esperada**: O(?)
+- **Dificultad**: 49
+- **Conceptos clave**: [TODO: Enumerar conceptos a practicar]
 
-- Array
-- Hash Table
-- String
-- Sorting
+---
 
-## Companies
-
-- Amazon
-- Facebook
-- Microsoft
-- Google
-- Uber
-
-## Algorithm Approaches
-
-### Approach 1: Sorting
-- Sort each string to get canonical form
-- Use sorted string as hash map key
-
-### Approach 2: Character Count
-- Count frequency of each character
-- Use frequency tuple as hash map key
+### Instrucciones para completar:
+1. Visitar https://leetcode.com/problems/problem-49/
+2. Copiar el enunciado completo en la sección "Problema"
+3. Actualizar Input/Output con información específica
+4. Copiar constraints exactos de LeetCode
+5. Copiar todos los ejemplos de LeetCode
+6. Agregar explicación detallada del approach
+7. Incluir tags apropiados del repositorio
+8. Actualizar complejidades después de resolver

@@ -1,0 +1,15 @@
+id: "028"
+title: "Merge Sorted Array"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "88"
+url: "https://leetcode.com/problems/merge-sorted-array/"
+tags: ["array", "two-pointers", "sorting"]
+time_minutes: 20
+complexity:
+  time: "O(m + n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master two-pointer technique"
+  - "Practice in-place array modifications"
+  - "Understand merge algorithms"

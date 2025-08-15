@@ -1,0 +1,8 @@
+id: "124"
+title: "Unique Paths"
+difficulty: "intermediate"
+tags:
+time_minutes: 45        # Estimated solve time for intermediate level
+source: "leetcode"
+problem_id: "62"
+url: "https://leetcode.com/problems/problem-62/"

@@ -1,0 +1,6 @@
+id: "F059"
+title: "Password Validator"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "strings", "validation", "security"]
+time_minutes: 15

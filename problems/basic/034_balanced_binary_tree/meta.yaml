@@ -1,0 +1,15 @@
+id: "034"
+title: "Balanced Binary Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "110"
+url: "https://leetcode.com/problems/balanced-binary-tree/"
+tags: ["tree", "depth-first-search", "binary-tree"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Understand balanced tree concepts"
+  - "Practice tree height calculations"
+  - "Master recursive tree validation"

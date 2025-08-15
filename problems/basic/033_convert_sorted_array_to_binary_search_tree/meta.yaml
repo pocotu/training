@@ -1,0 +1,15 @@
+id: "033"
+title: "Convert Sorted Array to Binary Search Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "108"
+url: "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/"
+tags: ["array", "divide-and-conquer", "tree", "binary-search-tree", "binary-tree"]
+time_minutes: 25
+complexity:
+  time: "O(n)"
+  space: "O(log n)"
+learning_objectives:
+  - "Master BST construction algorithms"
+  - "Practice divide and conquer technique"
+  - "Understand balanced tree properties"

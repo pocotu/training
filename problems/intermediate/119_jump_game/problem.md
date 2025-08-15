@@ -1,67 +1,64 @@
-# Jump Game
+# [126] Jump Game
 
-**Difficulty:** Medium  
-**Source:** LeetCode  
-**ID:** 119
+## Problema
+[TODO: Copiar el enunciado completo del problema desde LeetCode]
 
-## Problem Description
+Visita: https://leetcode.com/problems/problem-55/
 
-Solve the following problem efficiently.
-
-### Task
-
-Implement a solution for Jump Game.
-
-## Examples
-
-### Example 1
-
-```
-Input: [example input]
-Output: [example output]
-Explanation: [explanation of the solution]
-```
-
-### Example 2
-
-```
-Input: [example input]
-Output: [example output]
-Explanation: [explanation of the solution]
-```
+## Input/Output
+- **Input**: [TODO: Describir formato de entrada]
+- **Output**: [TODO: Describir formato de salida esperado]
 
 ## Constraints
+- [TODO: Copiar constraints desde LeetCode]
+- Ejemplo: n ≤ 10^4
+- Ejemplo: values ≤ 10^9
 
-- Standard competitive programming constraints apply
-- Consider time and space complexity
+## Ejemplos
 
-## Approach
+### Ejemplo 1:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
 
-### Key Insights
+### Ejemplo 2:
+```
+Input: [TODO: Copiar desde LeetCode]
+Output: [TODO: Copiar desde LeetCode]
+```
 
-1. Analyze the problem requirements
-2. Identify the optimal approach
-3. Implement the solution efficiently
+### Ejemplo 3 (Edge Case):
+```
+Input: [TODO: Agregar caso límite]
+Output: [TODO: Salida esperada]
+```
 
-### Algorithm
+## Explicación
+[TODO: Explicar el algoritmo y la lógica de solución]
 
-1. [Step 1 description]
-2. [Step 2 description]
-3. [Step 3 description]
+## Hints
+- [TODO: Agregar pista sobre estructura de datos]
+- [TODO: Agregar pista sobre algoritmo]
+- [TODO: Agregar pista sobre complejidad]
 
-## Complexity Analysis
+## Tags
+[TODO: Agregar tags apropiados], leetcode
 
-- **Time Complexity:** O(n)
-- **Space Complexity:** O(1)
+## Notas Adicionales
+- **Complejidad de tiempo esperada**: O(?)
+- **Complejidad de espacio esperada**: O(?)
+- **Dificultad**: 55
+- **Conceptos clave**: [TODO: Enumerar conceptos a practicar]
 
-## Implementation Notes
+---
 
-- Handle edge cases properly
-- Ensure optimal performance
-- Write clean, readable code
-
-## Related Topics
-
-- Algorithms
-- Data Structures
-- Problem Solving
+### Instrucciones para completar:
+1. Visitar https://leetcode.com/problems/problem-55/
+2. Copiar el enunciado completo en la sección "Problema"
+3. Actualizar Input/Output con información específica
+4. Copiar constraints exactos de LeetCode
+5. Copiar todos los ejemplos de LeetCode
+6. Agregar explicación detallada del approach
+7. Incluir tags apropiados del repositorio
+8. Actualizar complejidades después de resolver

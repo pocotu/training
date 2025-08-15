@@ -1,0 +1,15 @@
+id: "027"
+title: "Remove Duplicates from Sorted List"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "83"
+url: "https://leetcode.com/problems/remove-duplicates-from-sorted-list/"
+tags: ["linked-list", "two-pointers"]
+time_minutes: 15
+complexity:
+  time: "O(n)"
+  space: "O(1)"
+learning_objectives:
+  - "Master linked list manipulation"
+  - "Practice in-place modifications"
+  - "Understand duplicate removal patterns"

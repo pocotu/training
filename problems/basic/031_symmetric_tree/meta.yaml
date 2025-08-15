@@ -1,0 +1,15 @@
+id: "031"
+title: "Symmetric Tree"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "101"
+url: "https://leetcode.com/problems/symmetric-tree/"
+tags: ["tree", "depth-first-search", "breadth-first-search", "binary-tree"]
+time_minutes: 20
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Understand tree symmetry concepts"
+  - "Practice recursive tree comparison"
+  - "Master helper function patterns"

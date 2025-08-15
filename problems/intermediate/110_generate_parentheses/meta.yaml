@@ -1,10 +1,6 @@
 id: "110"
 title: "Generate Parentheses"
-difficulty: "Medium"
-source: "LeetCode"
-tags: "["intermediate", "algorithms"]"
-source_id: "22"
-category: "String"
-time_complexity: "O(4^n / sqrt(n))"
-space_complexity: "O(4^n / sqrt(n))"
-solved: "false"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["intermediate", "algorithms"]
+time_minutes: 45

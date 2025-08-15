@@ -1,0 +1,15 @@
+id: "029"
+title: "Binary Tree Inorder Traversal"
+difficulty: "basic"
+source: "leetcode"
+problem_id: "94"
+url: "https://leetcode.com/problems/binary-tree-inorder-traversal/"
+tags: ["stack", "tree", "depth-first-search", "binary-tree"]
+time_minutes: 25
+complexity:
+  time: "O(n)"
+  space: "O(n)"
+learning_objectives:
+  - "Master tree traversal algorithms"
+  - "Practice recursive and iterative approaches"
+  - "Understand DFS patterns"
