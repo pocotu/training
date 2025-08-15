@@ -1,1 +1,99 @@
-.pytest_cache
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing
+# =============================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook
+# =============================
+.ipynb_checkpoints
+
+# pyenv
+# =============================
+.python-version
+
+# pipenv
+# =============================
+Pipfile.lock
+
+# Environment variables
+# =============================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE / Editor files
+# =============================
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+# =============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+# =============================
+*.tmp
+*.temp
+*.log
+
+# Contest specific
+# =============================
+*.zip
+*.tar.gz
+contest_*.txt
+submission_*.py
+
+# Personal notes (optional)
+# =============================
+# notes.txt
+# personal_notes.md
