@@ -1,0 +1,6 @@
+id: "F001"
+title: "Hello, World!"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "foundations"]
+time_minutes: 5

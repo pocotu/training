@@ -1,0 +1,6 @@
+id: "F032"
+title: "Dictionary Comprehensions"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "dictionaries", "comprehensions"]
+time_minutes: 10

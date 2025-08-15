@@ -39,8 +39,8 @@ def parse_simple_yaml(content: str) -> Dict[str, Any]:
                 value = True
             elif value.lower() in ['false', 'no']:
                 value = False
-            elif value.isdigit():
-                value = int(value)
+            # elif value.isdigit(): # Commented out for debugging
+            #     value = int(value)
             elif value.startswith('[') and value.endswith(']'):
                 # Simple list parsing
                 value = [item.strip().strip('"\'') for item in value[1:-1].split(',') if item.strip()]
@@ -100,7 +100,8 @@ class ProgressTracker:
             return
         
         # Escanear carpetas de dificultad
-        for difficulty_dir in ["basic", "intermediate", "advanced"]:
+        # Escanear carpetas de dificultad
+        for difficulty_dir in ["foundations", "basic", "intermediate", "advanced"]:
             difficulty_path = self.problems_path / difficulty_dir
             if difficulty_path.exists():
                 self._scan_difficulty_folder(difficulty_path, difficulty_dir)
@@ -218,8 +219,8 @@ class ProgressTracker:
         
         # Estadísticas por dificultad
         print(f"{Colors.BOLD}📈 ESTADÍSTICAS POR DIFICULTAD:{Colors.END}")
-        difficulties = ["basic", "intermediate", "advanced"]
-        colors = [Colors.GREEN, Colors.YELLOW, Colors.RED]
+        difficulties = ["foundations", "basic", "intermediate", "advanced"]
+        colors = [Colors.CYAN, Colors.GREEN, Colors.YELLOW, Colors.RED]
         
         for difficulty, color in zip(difficulties, colors):
             stats = self.stats[f"difficulty_{difficulty}"]
@@ -259,7 +260,7 @@ class ProgressTracker:
             problems_by_difficulty[problem['difficulty']].append(problem)
         
         # Mostrar por cada dificultad
-        for difficulty in ["basic", "intermediate", "advanced", "contest"]:
+        for difficulty in ["foundations", "basic", "intermediate", "advanced", "contest"]:
             if difficulty not in problems_by_difficulty:
                 continue
             
@@ -268,7 +269,9 @@ class ProgressTracker:
                 continue
             
             # Color por dificultad
-            if difficulty == "basic":
+            if difficulty == "foundations":
+                color = Colors.CYAN
+            elif difficulty == "basic":
                 color = Colors.GREEN
             elif difficulty == "intermediate":
                 color = Colors.YELLOW
