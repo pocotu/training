@@ -158,7 +158,7 @@ class ProgressTracker:
             
             # Procesar metadata
             problem_data = {
-                'id': meta_data.get('id', ''),
+                'id': str(meta_data.get('id', '')).zfill(3) if meta_data.get('id') else '',
                 'title': meta_data.get('title', problem_dir.name),
                 'difficulty': meta_data.get('difficulty', difficulty),
                 'source': meta_data.get('source', 'unknown'),
@@ -278,7 +278,7 @@ class ProgressTracker:
                 color = Colors.PURPLE
             
             print(f"\n{color}{Colors.BOLD}{difficulty.upper()}:{Colors.END}")
-            problems.sort(key=lambda x: x['id'])
+            problems.sort(key=lambda x: str(x['id']).zfill(3))
             
             for problem in problems:
                 status = "✅" if problem['id'] in self.solved_problems else "⭕"
