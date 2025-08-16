@@ -1,0 +1,15 @@
+id: "129"
+title: "Surrounded Regions"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["matrix", "dfs", "bfs", "union-find"]
+time_minutes: 40
+problem_id: "130"
+url: "https://leetcode.com/problems/surrounded-regions/"
+complexity: "Medium"
+time: "O(m*n)"
+space: "O(m*n)"
+learning_objectives:
+  - "Practice matrix traversal algorithms"
+  - "Understand boundary condition handling"
+  - "Master flood-fill pattern variations"

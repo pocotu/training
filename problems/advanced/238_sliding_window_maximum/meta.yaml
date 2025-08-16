@@ -1,0 +1,20 @@
+id: "238"
+title: "Sliding Window Maximum"
+difficulty: "advanced"
+source: "leetcode"
+tags: ["array", "deque", "sliding-window", "monotonic-queue"]
+time_minutes: 60
+problem_id: "239"
+url: "https://leetcode.com/problems/sliding-window-maximum/"
+complexity: "Hard"
+time: "O(n)"
+space: "O(k)"
+learning_objectives:
+  - "Master monotonic deque data structure"
+  - "Understand sliding window optimization techniques"
+  - "Practice advanced queue operations"
+companies:
+  - "Google"
+  - "Facebook" 
+  - "Microsoft"
+  - "Amazon"

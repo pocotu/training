@@ -1,0 +1,15 @@
+id: "128"
+title: "Sum Root to Leaf Numbers"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["tree", "dfs", "backtracking"]
+time_minutes: 35
+problem_id: "129"
+url: "https://leetcode.com/problems/sum-root-to-leaf-numbers/"
+complexity: "Medium"
+time: "O(n)"
+space: "O(h)"
+learning_objectives:
+  - "Practice tree traversal with path accumulation"
+  - "Understand DFS with state passing"
+  - "Master recursive problem decomposition"

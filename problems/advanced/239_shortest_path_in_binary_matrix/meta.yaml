@@ -1,0 +1,19 @@
+id: "239"
+title: "Shortest Path in Binary Matrix"
+difficulty: "advanced"
+source: "leetcode"
+tags: ["matrix", "bfs", "shortest-path", "graph"]
+time_minutes: 50
+problem_id: "1091"
+url: "https://leetcode.com/problems/shortest-path-in-binary-matrix/"
+complexity: "Medium"
+time: "O(n^2)"
+space: "O(n^2)"
+learning_objectives:
+  - "Practice BFS for shortest path problems"
+  - "Understand 8-directional movement in grids"
+  - "Master path finding algorithms"
+companies:
+  - "Google"
+  - "Microsoft"
+  - "Amazon"

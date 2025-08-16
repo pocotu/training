@@ -1,0 +1,15 @@
+id: "130"
+title: "Palindrome Partitioning"
+difficulty: "intermediate"
+source: "leetcode"
+tags: ["string", "backtracking", "dynamic-programming"]
+time_minutes: 45
+problem_id: "131"
+url: "https://leetcode.com/problems/palindrome-partitioning/"
+complexity: "Medium"
+time: "O(n * 2^n)"
+space: "O(n)"
+learning_objectives:
+  - "Practice backtracking with string manipulation"
+  - "Understand palindrome detection techniques"
+  - "Master recursive partitioning problems"

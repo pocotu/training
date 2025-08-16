@@ -23,6 +23,12 @@ from collections import defaultdict, Counter
 from datetime import datetime
 from typing import Dict, List, Set, Optional, Tuple, Any
 
+# Fix for Windows encoding issues
+if sys.platform.startswith('win'):
+    import codecs
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
+    sys.stderr = codecs.getwriter('utf-8')(sys.stderr.buffer, 'strict')
+
 # Simple YAML parser fallback (basic functionality)
 def parse_simple_yaml(content: str) -> Dict[str, Any]:
     """Simple YAML parser for basic key-value pairs"""
@@ -133,6 +139,10 @@ class ProgressTracker:
         """Procesar directorio individual de problema"""
         meta_file = problem_dir / "meta.yaml"
         
+        # SIEMPRE usar la ubicación física como dificultad base
+        # Esto garantiza que todos los ejercicios se cuenten en la categoría correcta
+        base_difficulty = difficulty
+        
         if not meta_file.exists():
             # Crear entrada básica sin metadata
             problem_id = self._extract_id_from_dirname(problem_dir.name)
@@ -140,7 +150,7 @@ class ProgressTracker:
                 problem_data = {
                     'id': problem_id,
                     'title': problem_dir.name,
-                    'difficulty': difficulty,
+                    'difficulty': base_difficulty,  # Usar ubicación física
                     'source': 'unknown',
                     'tags': [],
                     'path': str(problem_dir),
@@ -157,11 +167,16 @@ class ProgressTracker:
                 content = f.read()
                 meta_data = parse_simple_yaml(content) or {}
             
-            # Procesar metadata
+            # PRIORIZAR la ubicación física sobre el meta.yaml para difficulty
+            # Esto corrige automáticamente inconsistencias y garantiza tracking completo
+            meta_difficulty = meta_data.get('difficulty', base_difficulty)
+            
+            # Procesar metadata usando ubicación física como fuente de verdad
             problem_data = {
                 'id': str(meta_data.get('id', '')).zfill(3) if meta_data.get('id') else '',
                 'title': meta_data.get('title', problem_dir.name),
-                'difficulty': meta_data.get('difficulty', difficulty),
+                'difficulty': base_difficulty,  # SIEMPRE usar ubicación física
+                'meta_difficulty': meta_difficulty,  # Guardar el valor original por referencia
                 'source': meta_data.get('source', 'unknown'),
                 'tags': meta_data.get('tags', []),
                 'time_minutes': meta_data.get('time_minutes', 0),
@@ -176,6 +191,12 @@ class ProgressTracker:
             self.problems_data.append(problem_data)
             self._update_stats(problem_data)
             
+            # Advertir sobre inconsistencias para corrección manual si se desea
+            if meta_difficulty != base_difficulty:
+                normalized_meta = self._normalize_difficulty(meta_difficulty)
+                if normalized_meta != base_difficulty:
+                    print(f"⚠️  Inconsistencia: {problem_dir.name} está en {base_difficulty}/ pero meta.yaml dice '{meta_difficulty}'")
+            
         except Exception as e:
             print(f"{Colors.YELLOW}⚠️  Error procesando {meta_file}: {e}{Colors.END}")
     
@@ -186,13 +207,34 @@ class ProgressTracker:
             return parts[0].zfill(3)
         return None
     
+    def _normalize_difficulty(self, difficulty: str) -> str:
+        """Normalizar valores de dificultad a formato estándar"""
+        difficulty_map = {
+            # LeetCode style -> standard
+            "easy": "basic",
+            "medium": "intermediate", 
+            "hard": "advanced",
+            # Capitalized versions
+            "Easy": "basic",
+            "Medium": "intermediate",
+            "Hard": "advanced",
+            # Already standard
+            "basic": "basic",
+            "intermediate": "intermediate", 
+            "advanced": "advanced",
+            "foundations": "foundations",
+            "contest": "contest"
+        }
+        return difficulty_map.get(difficulty, difficulty)
+
     def _update_stats(self, problem_data: Dict) -> None:
         """Actualizar estadísticas con datos del problema"""
+        # Usar la difficulty basada en ubicación física (ya normalizada)
         difficulty = problem_data['difficulty']
         source = problem_data['source']
         problem_id = problem_data['id']
         
-        # Estadísticas por dificultad
+        # Estadísticas por dificultad (usando ubicación física)
         self.stats[f"difficulty_{difficulty}"]["total"] += 1
         if problem_id in self.solved_problems:
             self.stats[f"difficulty_{difficulty}"]["solved"] += 1

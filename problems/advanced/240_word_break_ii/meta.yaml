@@ -1,0 +1,15 @@
+id: 240
+title: "Word Break II"
+difficulty: advanced
+source: leetcode
+url: "https://leetcode.com/problems/word-break-ii/"
+tags:
+  - dynamic-programming
+  - backtracking  
+  - string-manipulation
+  - memoization
+learning_objectives:
+  - Practice advanced dynamic programming with backtracking
+  - Master string segmentation with multiple solutions
+  - Implement memoization for optimization
+  - Handle combinatorial explosion in recursive problems
