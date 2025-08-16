@@ -1,0 +1,14 @@
+id: "F048"
+title: "CSV Data Processing"
+difficulty: "foundations"
+estimated_time_minutes: 18
+concepts:
+  - "csv_processing"
+  - "data_parsing"
+  - "file_formats"
+  - "data_analysis"
+tags:
+  - "csv"
+  - "data_processing"
+  - "file_handling"
+  - "data_analysis"

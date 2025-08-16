@@ -1,0 +1,10 @@
+auth:
+  secret_key: default_secret_key
+database:
+  name: tasks.db
+email:
+  port: 587
+  smtp_server: smtp.example.com
+logging:
+  file: app.log
+  level: INFO

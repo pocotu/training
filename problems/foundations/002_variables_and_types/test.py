@@ -13,25 +13,26 @@ from solution import create_variables
 
 class TestVariablesAndTypes(unittest.TestCase):
 
-    def test_create_variables(self):
-        """Test that the function returns the correct tuple of variables."""
+    def test_create_variables_types(self):
+        """Test that the function returns correct types"""
         result = create_variables()
-        self.assertIsInstance(result, tuple, "The function should return a tuple.")
-        self.assertEqual(len(result), 4, "The tuple should have 4 elements.")
         
-        integer_var, float_var, string_var, bool_var = result
+        # Verify it's a tuple with 4 elements
+        self.assertIsInstance(result, tuple)
+        self.assertEqual(len(result), 4)
         
-        self.assertEqual(integer_var, 10)
-        self.assertIsInstance(integer_var, int)
+        # Verify each element type and value
+        self.assertIsInstance(result[0], int)
+        self.assertEqual(result[0], 10)
         
-        self.assertEqual(float_var, 3.14)
-        self.assertIsInstance(float_var, float)
+        self.assertIsInstance(result[1], float)
+        self.assertEqual(result[1], 3.14)
         
-        self.assertEqual(string_var, "Python")
-        self.assertIsInstance(string_var, str)
+        self.assertIsInstance(result[2], str)
+        self.assertEqual(result[2], "Python")
         
-        self.assertEqual(bool_var, True)
-        self.assertIsInstance(bool_var, bool)
+        self.assertIsInstance(result[3], bool)
+        self.assertEqual(result[3], True)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()

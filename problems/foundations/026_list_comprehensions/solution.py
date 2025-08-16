@@ -3,9 +3,22 @@ Solution for List Comprehensions
 Problem ID: F026
 """
 
-def square_numbers(lst):
+def square_numbers(numbers):
     """
-    Squares the numbers in a list using a list comprehension.
+    Returns a list of squared numbers using list comprehension.
     """
-    # Escribe tu código aquí
-    pass
+    return [num ** 2 for num in numbers]
+
+def main():
+    """
+    Función principal para 026_list_comprehensions
+    """
+    # Ejemplo de uso
+    test_list = [1, 2, 3, 4, 5]
+    result = square_numbers(test_list)
+    print(f"Cuadrados de {test_list}: {result}")
+    return result
+
+if __name__ == "__main__":
+    result = main()
+    print(f"Resultado: {result}")

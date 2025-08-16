@@ -13,11 +13,22 @@ from solution import perform_operations
 
 class TestArithmeticOperations(unittest.TestCase):
 
-    def test_perform_operations(self):
-        """Test that the function performs the arithmetic operations correctly."""
-        self.assertEqual(perform_operations(10, 5), (15, 5, 50, 2.0))
-        self.assertEqual(perform_operations(20, 4), (24, 16, 80, 5.0))
-        self.assertEqual(perform_operations(7, 2), (9, 5, 14, 3.5))
+    def test_basic_operations(self):
+        """Test basic arithmetic operations"""
+        result = perform_operations(10, 5)
+        expected = (15, 5, 50, 2.0)
+        self.assertEqual(result, expected)
+    
+    def test_negative_numbers(self):
+        """Test with negative numbers"""
+        result = perform_operations(-10, 2)
+        expected = (-8, -12, -20, -5.0)
+        self.assertEqual(result, expected)
+    
+    def test_division_by_zero(self):
+        """Test division by zero raises error"""
+        with self.assertRaises(ValueError):
+            perform_operations(10, 0)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()

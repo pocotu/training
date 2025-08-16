@@ -14,7 +14,11 @@ from solution import create_list
 class TestListCreation(unittest.TestCase):
 
     def test_create_list(self):
-        self.assertEqual(create_list(), [1, 2, 3])
+        """Test that the function returns [1, 2, 3]"""
+        result = create_list()
+        expected = [1, 2, 3]
+        self.assertEqual(result, expected)
+        self.assertIsInstance(result, list)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()

@@ -1,0 +1,14 @@
+id: "F097"
+title: "Security and Encryption Basics"
+difficulty: "foundations"
+estimated_time_minutes: 30
+concepts:
+  - "encryption"
+  - "hashing"
+  - "security_practices"
+  - "password_security"
+tags:
+  - "security"
+  - "encryption"
+  - "hashing"
+  - "cryptography"

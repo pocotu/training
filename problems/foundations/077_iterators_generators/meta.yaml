@@ -1,0 +1,14 @@
+id: "F077"
+title: "Iterator and Generator Basics"
+difficulty: "foundations"
+estimated_time_minutes: 20
+concepts:
+  - "iterators"
+  - "generators"
+  - "yield"
+  - "lazy_evaluation"
+tags:
+  - "generators"
+  - "iterators"
+  - "memory_efficiency"
+  - "python_advanced"

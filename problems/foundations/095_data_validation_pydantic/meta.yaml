@@ -1,0 +1,14 @@
+id: "F095"
+title: "Data Validation with Pydantic"
+difficulty: "foundations"
+estimated_time_minutes: 26
+concepts:
+  - "data_validation"
+  - "type_checking"
+  - "model_validation"
+  - "schema_definition"
+tags:
+  - "pydantic"
+  - "validation"
+  - "type_safety"
+  - "data_models"

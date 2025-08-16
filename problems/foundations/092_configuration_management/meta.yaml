@@ -1,0 +1,14 @@
+id: "F092"
+title: "Configuration Management"
+difficulty: "foundations"
+estimated_time_minutes: 20
+concepts:
+  - "configuration_files"
+  - "environment_variables"
+  - "settings_management"
+  - "config_validation"
+tags:
+  - "configuration"
+  - "settings"
+  - "environment"
+  - "config_files"

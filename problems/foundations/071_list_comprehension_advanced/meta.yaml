@@ -1,0 +1,6 @@
+id: "F071"
+title: "List Comprehension Advanced"
+difficulty: "foundations"
+source: "internal"
+tags: ["python basics", "list-comprehension", "filtering", "mapping"]
+time_minutes: 12

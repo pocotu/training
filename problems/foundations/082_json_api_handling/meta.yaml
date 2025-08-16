@@ -1,0 +1,14 @@
+id: "F082"
+title: "JSON and API Handling"
+difficulty: "foundations"
+estimated_time_minutes: 22
+concepts:
+  - "json_processing"
+  - "api_requests"
+  - "data_serialization"
+  - "http_basics"
+tags:
+  - "json"
+  - "api"
+  - "http"
+  - "data_exchange"

@@ -1,0 +1,14 @@
+id: "F091"
+title: "Advanced Logging and Debugging"
+difficulty: "foundations"
+estimated_time_minutes: 24
+concepts:
+  - "advanced_logging"
+  - "log_formatting"
+  - "debugging_techniques"
+  - "log_analysis"
+tags:
+  - "logging"
+  - "debugging"
+  - "troubleshooting"
+  - "monitoring"

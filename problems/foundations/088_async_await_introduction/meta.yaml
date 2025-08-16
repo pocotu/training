@@ -1,0 +1,14 @@
+id: "F088"
+title: "Async Await Introduction"
+difficulty: "foundations"
+estimated_time_minutes: 30
+concepts:
+  - "async_await"
+  - "coroutines"
+  - "event_loop"
+  - "asynchronous_programming"
+tags:
+  - "asyncio"
+  - "async_await"
+  - "coroutines"
+  - "asynchronous"

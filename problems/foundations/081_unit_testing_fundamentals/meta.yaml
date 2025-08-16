@@ -1,0 +1,14 @@
+id: "F081"
+title: "Unit Testing Fundamentals"
+difficulty: "foundations"
+estimated_time_minutes: 20
+concepts:
+  - "unit_testing"
+  - "test_cases"
+  - "assertions"
+  - "test_driven_development"
+tags:
+  - "testing"
+  - "unittest"
+  - "tdd"
+  - "quality_assurance"

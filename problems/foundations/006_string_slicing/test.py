@@ -14,8 +14,19 @@ from solution import get_substring
 class TestStringSlicing(unittest.TestCase):
 
     def test_get_substring(self):
-        self.assertEqual(get_substring("Hello, World!", 7, 12), "World")
-        self.assertEqual(get_substring("abcdef", 1, 4), "bcd")
+        """Test basic string slicing"""
+        result = get_substring("Hello, World!", 7, 12)
+        self.assertEqual(result, "World")
+    
+    def test_get_substring_beginning(self):
+        """Test slicing from beginning"""
+        result = get_substring("Python", 0, 3)
+        self.assertEqual(result, "Pyt")
+    
+    def test_get_substring_end(self):
+        """Test slicing to end"""
+        result = get_substring("Programming", 4, 11)
+        self.assertEqual(result, "ramming")
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()

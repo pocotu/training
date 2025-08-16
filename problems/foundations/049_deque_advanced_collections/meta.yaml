@@ -1,0 +1,14 @@
+id: "F049"
+title: "Deque and Advanced Collections"
+difficulty: "foundations"
+estimated_time_minutes: 20
+concepts:
+  - "deque"
+  - "collections_module"
+  - "double_ended_queue"
+  - "efficient_operations"
+tags:
+  - "collections"
+  - "deque"
+  - "data_structures"
+  - "performance"

@@ -1,0 +1,14 @@
+id: "F087"
+title: "Multiprocessing Fundamentals"
+difficulty: "foundations"
+estimated_time_minutes: 28
+concepts:
+  - "multiprocessing"
+  - "process_pools"
+  - "inter_process_communication"
+  - "cpu_bound_tasks"
+tags:
+  - "multiprocessing"
+  - "parallel_computing"
+  - "cpu_intensive"
+  - "process_communication"

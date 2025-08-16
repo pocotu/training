@@ -20,12 +20,13 @@ pip install pytest PyYAML
 
 ### 1. Elegir un Problema por Categoría
 
-#### 🟢 **Foundations (F001-F070)** - Fundamentos de Python
-Ideal para principiantes, cubre conceptos básicos de programación.
+#### 🟢 **Foundations (F001-F100)** - Fundamentos Completos de Python
+Formación integral desde conceptos básicos hasta temas avanzados del mundo real.
 ```bash
 # Ver problemas de fundamentos
 ls problems/foundations/
-# Ejemplos: variables, funciones, clases, estructuras básicas
+# Ejemplos: variables, funciones, clases, OOP, algoritmos, async/await, 
+# web scraping, multiprocessing, APIs, testing, packaging, capstone project
 ```
 
 #### 🟡 **Basic (001-045)** - Algoritmos Básicos  
@@ -116,7 +117,7 @@ echo "201" >> solved.txt  # Para advanced
 2. **Leer**: `cat problem.md` → entender conceptos básicos
 3. **Implementar**: editar `solution.py` con fundamentos de Python
 4. **Probar**: `pytest test.py -v`
-5. **Avanzar**: completar F001-F070 antes de pasar a Basic
+5. **Avanzar**: completar F001-F100 antes de pasar a Basic
 
 ### Para Nivel Intermedio (Ruta Basic → Intermediate)
 1. **Explorar Basic**: `ls problems/basic/` → algoritmos fundamentales

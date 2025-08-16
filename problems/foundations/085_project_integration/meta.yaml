@@ -1,0 +1,14 @@
+id: "F085"
+title: "Project Integration and Best Practices"
+difficulty: "foundations"
+estimated_time_minutes: 35
+concepts:
+  - "code_organization"
+  - "documentation"
+  - "version_control"
+  - "best_practices"
+tags:
+  - "project_management"
+  - "best_practices"
+  - "documentation"
+  - "integration"

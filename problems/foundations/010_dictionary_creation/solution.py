@@ -5,7 +5,22 @@ Problem ID: F010
 
 def create_dictionary():
     """
-    Returns a dictionary.
+    Creates and returns a dictionary with keys 'name', 'age', and 'city'.
     """
-    # Escribe tu código aquí
-    pass
+    return {
+        'name': 'John',
+        'age': 25,
+        'city': 'New York'
+    }
+
+def main():
+    """
+    Función principal para 010_dictionary_creation
+    """
+    result = create_dictionary()
+    print(f"Diccionario creado: {result}")
+    return result
+
+if __name__ == "__main__":
+    result = main()
+    print(f"Resultado: {result}")

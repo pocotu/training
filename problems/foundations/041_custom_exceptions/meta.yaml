@@ -1,0 +1,14 @@
+id: "F041"
+title: "Custom Exceptions and Error Handling"
+difficulty: "foundations"
+estimated_time_minutes: 16
+concepts:
+  - "custom_exceptions"
+  - "error_hierarchy"
+  - "exception_chaining"
+  - "error_messages"
+tags:
+  - "exceptions"
+  - "custom_classes"
+  - "error_handling"
+  - "python_advanced"

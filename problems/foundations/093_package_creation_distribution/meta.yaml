@@ -1,0 +1,14 @@
+id: "F093"
+title: "Package Creation and Distribution"
+difficulty: "foundations"
+estimated_time_minutes: 32
+concepts:
+  - "package_creation"
+  - "setup_py"
+  - "pip_distribution"
+  - "module_structure"
+tags:
+  - "packaging"
+  - "distribution"
+  - "modules"
+  - "pip"

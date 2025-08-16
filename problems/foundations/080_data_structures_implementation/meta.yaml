@@ -1,0 +1,14 @@
+id: "F080"
+title: "Data Structures Implementation"
+difficulty: "foundations"
+estimated_time_minutes: 30
+concepts:
+  - "linked_lists"
+  - "binary_trees"
+  - "hash_tables"
+  - "data_structure_design"
+tags:
+  - "data_structures"
+  - "linked_lists"
+  - "trees"
+  - "implementation"

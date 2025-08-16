@@ -1,0 +1,14 @@
+id: "F083"
+title: "Database Basics with SQLite"
+difficulty: "foundations"
+estimated_time_minutes: 25
+concepts:
+  - "database_operations"
+  - "sql_queries"
+  - "sqlite"
+  - "data_persistence"
+tags:
+  - "database"
+  - "sqlite"
+  - "sql"
+  - "data_storage"

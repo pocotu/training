@@ -1,0 +1,14 @@
+id: "F079"
+title: "Context Managers"
+difficulty: "foundations"
+estimated_time_minutes: 18
+concepts:
+  - "context_managers"
+  - "with_statement"
+  - "resource_management"
+  - "cleanup"
+tags:
+  - "context_managers"
+  - "resource_management"
+  - "with_statement"
+  - "python_advanced"

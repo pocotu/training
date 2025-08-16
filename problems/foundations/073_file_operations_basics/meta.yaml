@@ -1,0 +1,14 @@
+id: "F073"
+title: "File Operations Basics"
+difficulty: "foundations"
+estimated_time_minutes: 18
+concepts:
+  - "file_handling"
+  - "read_write"
+  - "file_modes"
+  - "with_statement"
+tags:
+  - "files"
+  - "io_operations"
+  - "text_processing"
+  - "python_basics"

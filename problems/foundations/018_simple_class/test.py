@@ -14,8 +14,8 @@ from solution import Dog
 class TestSimpleClass(unittest.TestCase):
 
     def test_dog_bark(self):
-        my_dog = Dog()
-        self.assertEqual(my_dog.bark(), "Woof!")
+        my_dog = Dog("Buddy")
+        self.assertEqual(my_dog.bark(), "Buddy says woof!")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

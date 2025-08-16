@@ -1,0 +1,14 @@
+id: "F076"
+title: "Regular Expressions Basics"
+difficulty: "foundations"
+estimated_time_minutes: 22
+concepts:
+  - "regex"
+  - "pattern_matching"
+  - "string_validation"
+  - "text_processing"
+tags:
+  - "regex"
+  - "pattern_matching"
+  - "validation"
+  - "text_processing"

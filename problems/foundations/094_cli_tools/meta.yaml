@@ -1,0 +1,14 @@
+id: "F094"
+title: "Command Line Interface Tools"
+difficulty: "foundations"
+estimated_time_minutes: 28
+concepts:
+  - "cli_tools"
+  - "argument_parsing"
+  - "command_line_apps"
+  - "user_interaction"
+tags:
+  - "cli"
+  - "argparse"
+  - "command_line"
+  - "tools"

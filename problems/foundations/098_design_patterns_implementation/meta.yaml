@@ -1,0 +1,14 @@
+id: "F098"
+title: "Design Patterns Implementation"
+difficulty: "foundations"
+estimated_time_minutes: 35
+concepts:
+  - "design_patterns"
+  - "singleton"
+  - "factory"
+  - "observer"
+tags:
+  - "design_patterns"
+  - "software_architecture"
+  - "object_oriented"
+  - "best_practices"

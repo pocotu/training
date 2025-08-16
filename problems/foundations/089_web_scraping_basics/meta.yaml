@@ -1,0 +1,14 @@
+id: "F089"
+title: "Web Scraping Basics"
+difficulty: "foundations"
+estimated_time_minutes: 26
+concepts:
+  - "web_scraping"
+  - "html_parsing"
+  - "http_requests"
+  - "data_extraction"
+tags:
+  - "web_scraping"
+  - "beautifulsoup"
+  - "requests"
+  - "html_parsing"

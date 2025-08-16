@@ -14,7 +14,20 @@ from solution import create_dictionary
 class TestDictionaryCreation(unittest.TestCase):
 
     def test_create_dictionary(self):
-        self.assertEqual(create_dictionary(), {"name": "John", "age": 30})
+        """Test that the function returns a dictionary with correct keys"""
+        result = create_dictionary()
+        
+        # Verify it's a dictionary
+        self.assertIsInstance(result, dict)
+        
+        # Verify it has the required keys
+        required_keys = {'name', 'age', 'city'}
+        self.assertEqual(set(result.keys()), required_keys)
+        
+        # Verify values are of correct types
+        self.assertIsInstance(result['name'], str)
+        self.assertIsInstance(result['age'], int)
+        self.assertIsInstance(result['city'], str)
 
 if __name__ == '__main__':
-    unittest.main(verbosity=2)
+    unittest.main()

@@ -1,0 +1,14 @@
+id: "F075"
+title: "Algorithm Implementation - Sorting"
+difficulty: "foundations"
+estimated_time_minutes: 25
+concepts:
+  - "sorting_algorithms"
+  - "insertion_sort"
+  - "selection_sort"
+  - "algorithm_comparison"
+tags:
+  - "algorithms"
+  - "sorting"
+  - "data_structures"
+  - "performance"

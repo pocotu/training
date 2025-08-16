@@ -9,28 +9,32 @@ class SimpleStack:
     """
     
     def __init__(self):
-        # Escribe tu código aquí
-        pass
+        """Initialize empty stack."""
+        self.items = []
     
     def push(self, item):
-        # Escribe tu código aquí
-        pass
+        """Add item to top of stack."""
+        self.items.append(item)
     
     def pop(self):
-        # Escribe tu código aquí
-        pass
+        """Remove and return top item from stack."""
+        if self.is_empty():
+            return None
+        return self.items.pop()
     
     def peek(self):
-        # Escribe tu código aquí
-        pass
+        """Return top item without removing it."""
+        if self.is_empty():
+            return None
+        return self.items[-1]
     
     def is_empty(self):
-        # Escribe tu código aquí
-        pass
+        """Check if stack is empty."""
+        return len(self.items) == 0
     
     def size(self):
-        # Escribe tu código aquí
-        pass
+        """Return number of items in stack."""
+        return len(self.items)
 
 
 class SimpleQueue:
@@ -39,25 +43,66 @@ class SimpleQueue:
     """
     
     def __init__(self):
-        # Escribe tu código aquí
-        pass
+        """Initialize empty queue."""
+        self.items = []
     
     def enqueue(self, item):
-        # Escribe tu código aquí
-        pass
+        """Add item to rear of queue."""
+        self.items.append(item)
     
     def dequeue(self):
-        # Escribe tu código aquí
-        pass
+        """Remove and return front item from queue."""
+        if self.is_empty():
+            return None
+        return self.items.pop(0)
     
     def front(self):
-        # Escribe tu código aquí
-        pass
+        """Return front item without removing it."""
+        if self.is_empty():
+            return None
+        return self.items[0]
     
     def is_empty(self):
-        # Escribe tu código aquí
-        pass
+        """Check if queue is empty."""
+        return len(self.items) == 0
     
     def size(self):
-        # Escribe tu código aquí
-        pass
+        """Return number of items in queue."""
+        return len(self.items)
+
+
+def main():
+    """
+    Función principal para 070_simple_data_structures
+    """
+    # Test Stack
+    print("Testing Stack:")
+    stack = SimpleStack()
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    
+    print(f"Stack size: {stack.size()}")
+    print(f"Peek: {stack.peek()}")
+    print(f"Pop: {stack.pop()}")
+    print(f"Pop: {stack.pop()}")
+    print(f"Size after pops: {stack.size()}")
+    
+    # Test Queue
+    print("\nTesting Queue:")
+    queue = SimpleQueue()
+    queue.enqueue('A')
+    queue.enqueue('B')
+    queue.enqueue('C')
+    
+    print(f"Queue size: {queue.size()}")
+    print(f"Front: {queue.front()}")
+    print(f"Dequeue: {queue.dequeue()}")
+    print(f"Dequeue: {queue.dequeue()}")
+    print(f"Size after dequeues: {queue.size()}")
+    
+    return stack
+
+if __name__ == "__main__":
+    result = main()
+    print(f"Resultado: {result}")

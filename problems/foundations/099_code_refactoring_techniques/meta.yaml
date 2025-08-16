@@ -1,0 +1,14 @@
+id: "F099"
+title: "Code Refactoring Techniques"
+difficulty: "foundations"
+estimated_time_minutes: 28
+concepts:
+  - "code_refactoring"
+  - "clean_code"
+  - "code_smells"
+  - "improvement_techniques"
+tags:
+  - "refactoring"
+  - "clean_code"
+  - "code_quality"
+  - "maintenance"

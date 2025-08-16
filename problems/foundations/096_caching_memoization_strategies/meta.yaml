@@ -1,0 +1,14 @@
+id: "F096"
+title: "Caching and Memoization Strategies"
+difficulty: "foundations"
+estimated_time_minutes: 24
+concepts:
+  - "caching_strategies"
+  - "memoization"
+  - "performance_optimization"
+  - "cache_management"
+tags:
+  - "caching"
+  - "memoization"
+  - "optimization"
+  - "performance"

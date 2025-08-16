@@ -1,0 +1,14 @@
+id: "F084"
+title: "Performance Optimization"
+difficulty: "foundations"
+estimated_time_minutes: 28
+concepts:
+  - "time_complexity"
+  - "space_complexity"
+  - "profiling"
+  - "optimization_techniques"
+tags:
+  - "performance"
+  - "optimization"
+  - "profiling"
+  - "algorithms"

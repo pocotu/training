@@ -1,0 +1,14 @@
+id: "F074"
+title: "Object-Oriented Programming Basics"
+difficulty: "foundations"
+estimated_time_minutes: 20
+concepts:
+  - "classes"
+  - "objects"
+  - "methods"
+  - "attributes"
+tags:
+  - "oop"
+  - "classes"
+  - "objects"
+  - "python_basics"

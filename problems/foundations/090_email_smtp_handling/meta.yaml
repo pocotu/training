@@ -1,0 +1,14 @@
+id: "F090"
+title: "Email and SMTP Handling"
+difficulty: "foundations"
+estimated_time_minutes: 22
+concepts:
+  - "email_handling"
+  - "smtp"
+  - "email_composition"
+  - "attachments"
+tags:
+  - "email"
+  - "smtp"
+  - "communication"
+  - "automation"

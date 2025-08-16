@@ -1,0 +1,14 @@
+id: "F078"
+title: "Decorators Fundamentals"
+difficulty: "foundations"
+estimated_time_minutes: 25
+concepts:
+  - "decorators"
+  - "higher_order_functions"
+  - "function_wrapping"
+  - "code_reusability"
+tags:
+  - "decorators"
+  - "functional_programming"
+  - "metaprogramming"
+  - "python_advanced"

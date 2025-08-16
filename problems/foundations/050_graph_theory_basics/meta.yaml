@@ -1,0 +1,14 @@
+id: "F050"
+title: "Graph Theory Basics"
+difficulty: "foundations"
+estimated_time_minutes: 22
+concepts:
+  - "graph_theory"
+  - "adjacency_list"
+  - "graph_traversal"
+  - "connected_components"
+tags:
+  - "graphs"
+  - "algorithms"
+  - "data_structures"
+  - "graph_theory"

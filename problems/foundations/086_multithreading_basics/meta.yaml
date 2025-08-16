@@ -1,0 +1,14 @@
+id: "F086"
+title: "Multithreading Basics"
+difficulty: "foundations"
+estimated_time_minutes: 25
+concepts:
+  - "multithreading"
+  - "concurrent_execution"
+  - "thread_safety"
+  - "locks"
+tags:
+  - "threading"
+  - "concurrency"
+  - "parallel_processing"
+  - "synchronization"
