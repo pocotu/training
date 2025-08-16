@@ -7,5 +7,4 @@ def hello_world():
     """
     Returns the string "Hello, World!".
     """
-    # Escribe tu código aquí
-    pass
+    return "Hello, World!"
