@@ -1,41 +1,50 @@
-# [F084] Performance Optimization
+# [F084] Number Comparison Functions
 
 ## Problema
 
-Implementa tres funciones que demuestran técnicas de optimización:
-1. `slow_fibonacci(n)` y `fast_fibonacci(n)` - compara recursivo vs memoización
-2. `profile_function(func, *args)` - mide tiempo y memoria de ejecución
-3. `optimize_data_processing(data_list)` - optimiza procesamiento de datos
+Implementa tres funciones básicas para comparar números:
+1. `find_maximum(numbers_list)` - encuentra el mayor número en una lista
+2. `find_minimum(numbers_list)` - encuentra el menor número en una lista  
+3. `compare_numbers(a, b)` - compara dos números y retorna el resultado
+
+**Foundations**: Se enfoca en operaciones básicas de comparación y búsqueda en listas.
 
 ## Ejemplos
 
-### Funciones fibonacci:
+### Función find_maximum:
 ```
-Input: slow_fibonacci(10), fast_fibonacci(10)
-Output: (55, 55)  # mismo resultado, diferente velocidad
-```
-
-### Función profile_function:
-```
-Input: profile_function(sum, [1, 2, 3, 4, 5])
-Output: {"result": 15, "time_seconds": 0.001, "memory_mb": 0.1}
+Input: find_maximum([5, 2, 8, 1, 9])
+Output: 9
 ```
 
-### Función optimize_data_processing:
+### Función find_minimum:
 ```
-Input: optimize_data_processing([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
-Output: [2, 8, 18, 32, 50]  # cuadrados de números pares, optimizado
+Input: find_minimum([5, 2, 8, 1, 9])
+Output: 1
+```
+
+### Función compare_numbers:
+```
+Input: compare_numbers(5, 3)
+Output: "5 es mayor que 3"
+
+Input: compare_numbers(2, 7)  
+Output: "2 es menor que 7"
+
+Input: compare_numbers(4, 4)
+Output: "4 es igual a 4"
 ```
 
 ## Restricciones
-- slow_fibonacci debe usar recursión pura
-- fast_fibonacci debe usar memoización (lru_cache o dict)
-- profile_function debe medir tiempo real y uso aproximado de memoria
-- optimize_data_processing debe usar técnicas eficientes (comprensiones, generadores)
-- Comparar complejidades temporales en comentarios
+- find_maximum debe retornar None si la lista está vacía
+- find_minimum debe retornar None si la lista está vacía
+- compare_numbers debe retornar strings con el formato exacto mostrado
+- Validar que las listas contengan solo números
+- No usar funciones built-in max() y min()
 
 ## Conceptos a Practicar
-- Análisis de complejidad temporal y espacial
-- Técnicas de memoización
-- Profiling y benchmarking
+- Iteración sobre listas
+- Comparaciones numéricas
+- Manejo de casos edge (listas vacías)
+- Validación de entrada
 - Optimización de algoritmos y estructuras de datos

@@ -1,22 +1,34 @@
 import unittest
-from solution import main
+import sys
+from pathlib import Path
 
-class TestUnitTestingFundamentals(unittest.TestCase):
+sys.path.append(str(Path(__file__).parent))
+
+from solution import calculator
+
+class TestSimpleCalculator(unittest.TestCase):
     
-    def test_main_function_exists(self):
-        """Test que la función principal existe"""
-        self.assertTrue(callable(main))
-    
-    def test_main_execution(self):
-        """Test ejecución básica de main"""
-        result = main()
-        self.assertIsNotNone(result)
-    
-    def test_return_type(self):
-        """Test tipo de retorno"""
-        result = main()
-        # Ajustar según implementación específica
-        self.assertIsInstance(result, (bool, str, int, list, dict))
+    def test_calculator(self):
+        # Test 1: Suma
+        self.assertEqual(calculator(5, 3, "add"), 8)
+        
+        # Test 2: División
+        self.assertEqual(calculator(10, 2, "divide"), 5.0)
+        
+        # Test 3: Multiplicación
+        self.assertEqual(calculator(4, 3, "multiply"), 12)
+        
+        # Test 4: Resta
+        self.assertEqual(calculator(10, 4, "subtract"), 6)
+        
+        # Test 5: División por cero
+        self.assertEqual(calculator(10, 0, "divide"), "Error")
+        
+        # Test 6: Operación inválida
+        self.assertEqual(calculator(5, 3, "invalid"), "Error")
+
+if __name__ == '__main__':
+    unittest.main(verbosity=2)
 
 if __name__ == '__main__':
     unittest.main()

@@ -2,53 +2,58 @@
 
 ## Problema
 
-Implementa tres funciones para trabajar con grafos básicos:
+Implementa una función básica para trabajar con grafos usando diccionarios.
 
-1. `create_graph(edges)` - crea grafo usando lista de adyacencia
-2. `bfs_traversal(graph, start)` - recorrido BFS desde nodo inicial
-3. `find_connected_components(graph)` - encuentra componentes conectados
+Escribe una función llamada `create_graph` que reciba una lista de aristas (edges) representadas como tuplas de dos nodos, y devuelva un grafo representado como un diccionario donde cada clave es un nodo y su valor es una lista de nodos vecinos.
+
+**Simplificación para Foundations**: Solo se requiere crear la estructura del grafo, sin algoritmos complejos como BFS o componentes conectados.
 
 ## Ejemplos
 
-### Función create_graph:
+### Ejemplo 1:
 ```python
-edges = [
-    ("A", "B"), ("A", "C"), ("B", "D"), 
-    ("C", "D"), ("E", "F")
-]
+edges = [("A", "B"), ("A", "C"), ("B", "D")]
 graph = create_graph(edges)
 print(graph)
-# {
-#   "A": ["B", "C"], "B": ["A", "D"], "C": ["A", "D"],
-#   "D": ["B", "C"], "E": ["F"], "F": ["E"]
+# Output: {
+#   "A": ["B", "C"], 
+#   "B": ["A", "D"], 
+#   "C": ["A"], 
+#   "D": ["B"]
 # }
 ```
 
-### Función bfs_traversal:
+### Ejemplo 2:
 ```python
-path = bfs_traversal(graph, "A")
-print(path)  # ["A", "B", "C", "D"] (orden BFS)
+edges = [("1", "2"), ("2", "3")]
+graph = create_graph(edges)
+print(graph)
+# Output: {
+#   "1": ["2"], 
+#   "2": ["1", "3"], 
+#   "3": ["2"]
+# }
 ```
 
-### Función find_connected_components:
+### Ejemplo 3:
 ```python
-components = find_connected_components(graph)
-print(components)
-# [
-#   ["A", "B", "C", "D"],  # Componente 1
-#   ["E", "F"]             # Componente 2
-# ]
+edges = []
+graph = create_graph(edges)
+print(graph)
+# Output: {}
 ```
 
 ## Restricciones
-- create_graph debe crear grafo no dirigido (bidireccional)
-- bfs_traversal debe usar queue (collections.deque) 
-- find_connected_components debe retornar lista de listas
-- Manejar grafos desconectados correctamente
-- Usar conjunto (set) para evitar revisitar nodos
 
-## Conceptos a Practicar
-- Representación de grafos con lista de adyacencia
-- Algoritmo BFS (Breadth-First Search)
-- Detección de componentes conectados
-- Estructuras de datos para grafos
+- Las aristas serán tuplas de exactamente 2 elementos (nodo1, nodo2)  
+- Los nodos pueden ser strings o números
+- El grafo será no dirigido (si A conecta con B, B también conecta con A)
+- No habrá aristas duplicadas en la entrada
+
+## Tags
+graph, dictionary, data-structures, foundations
+
+## Notas Adicionales
+- **Complejidad de tiempo**: O(V + E) donde V = vértices, E = aristas
+- **Complejidad de espacio**: O(V + E)
+- **Conceptos clave**: Grafos, listas de adyacencia, diccionarios

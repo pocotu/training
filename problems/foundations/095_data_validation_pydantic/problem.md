@@ -1,8 +1,14 @@
-# [095 DATA VALIDATION PYDANTIC] 095 Data Validation Pydantic
+# [F095] Input Validation Functions
 
 ## Problema
 
-Implementa la funcionalidad requerida para este ejercicio de foundations.
+Implementa tres funciones para validación básica de entrada:
+
+1. `validate_range(number, min_val, max_val)` - valida que número esté en rango
+2. `validate_length(text, min_len, max_len)` - valida longitud de texto  
+3. `validate_format(text, pattern_type)` - valida formato básico (email, phone)
+
+**Foundations**: Se enfoca en validación de datos usando condicionales y string methods.
 
 ## Ejemplos
 

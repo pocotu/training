@@ -1,12 +1,14 @@
-# [F098] Design Patterns Implementation
+# [F098] Basic Class Concepts
 
 ## Problema
 
-Implementa tres patrones de diseño fundamentales:
+Implementa tres clases básicas que demuestran conceptos fundamentales de OOP:
 
-1. **Singleton Pattern** - garantiza una sola instancia
-2. **Factory Pattern** - crea objetos sin especificar clases exactas
-3. **Observer Pattern** - notifica cambios a múltiples objetos
+1. `Counter` - clase simple con métodos increment/decrement/get_value
+2. `BankAccount` - clase con atributos privados y métodos de depósito/retiro
+3. `Student` - clase con constructor, atributos y método de cálculo de promedio
+
+**Foundations**: Se enfoca en conceptos básicos de clases y objetos, esenciales en programación.
 
 ## Ejemplos
 

@@ -8,6 +8,19 @@ Escribe una función llamada `get_value_safely` que reciba un diccionario `d` y 
 
 ### Ejemplo 1:
 ```
+Input: d = {"name": "John", "age": 30}, key = "name"
+Output: "John"
+```
+
+### Ejemplo 2:
+```
 Input: d = {"name": "John"}, key = "age"
 Output: "Not Found"
 ```
+
+## Constraints
+
+- La función debe llamarse `get_value_safely`.
+- Usar específicamente el método `.get()` del diccionario.
+- Si la clave no existe, devolver exactamente "Not Found".
+- El diccionario puede estar vacío.

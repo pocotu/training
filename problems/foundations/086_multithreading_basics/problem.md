@@ -1,50 +1,45 @@
-# [F086] Multithreading Basics
+# [F086] List Operations and Processing
 
 ## Problema
 
-Implementa tres funciones que demuestran conceptos básicos de multithreading:
+Implementa tres funciones para operaciones avanzadas con listas:
 
-1. `parallel_task_execution(tasks, num_threads)` - ejecuta tareas en paralelo
-2. `thread_safe_counter()` - contador thread-safe con lock
-3. `worker_pool_example(data_list)` - procesa datos usando ThreadPoolExecutor
+1. `combine_lists(list1, list2)` - combina dos listas alternando elementos
+2. `group_by_length(words_list)` - agrupa palabras por longitud
+3. `flatten_nested_list(nested_list)` - aplana lista anidada
+
+**Foundations**: Se enfoca en operaciones con listas, concepto fundamental para estructuras de datos.
 
 ## Ejemplos
 
-### Función parallel_task_execution:
-```python
-def slow_task(n):
-    time.sleep(1)
-    return n ** 2
-
-tasks = [1, 2, 3, 4, 5]
-results = parallel_task_execution(tasks, 3)
-print(results)  # [1, 4, 9, 16, 25] - en ~2 segundos en lugar de 5
+### Función combine_lists:
+```
+Input: combine_lists([1, 2, 3], ["a", "b", "c"])
+Output: [1, "a", 2, "b", 3, "c"]
 ```
 
-### Función thread_safe_counter:
-```python
-counter = thread_safe_counter()
-# Usar en múltiples threads sin race conditions
-counter.increment()  # Thread-safe
-counter.get_value()  # Thread-safe
+### Función group_by_length:
+```
+Input: group_by_length(["casa", "carro", "sol", "luna", "estrella"])
+Output: {3: ["sol"], 4: ["casa", "luna"], 5: ["carro"], 8: ["estrella"]}
 ```
 
-### Función worker_pool_example:
-```python
-data = ["file1.txt", "file2.txt", "file3.txt"]
-results = worker_pool_example(data)
-print(results)  # Procesamiento paralelo de archivos
+### Función flatten_nested_list:
+```
+Input: flatten_nested_list([[1, 2], [3, 4, 5], [6]])
+Output: [1, 2, 3, 4, 5, 6]
 ```
 
 ## Restricciones
-- Usar threading module y ThreadPoolExecutor
-- thread_safe_counter debe usar Lock para sincronización
-- parallel_task_execution debe manejar excepciones en threads
-- worker_pool_example debe usar with statement para pool cleanup
-- Demostrar diferencia de rendimiento vs ejecución secuencial
+- combine_lists debe alternar elementos hasta agotar ambas listas
+- Si una lista es más larga, añadir elementos restantes al final
+- group_by_length debe retornar diccionario con longitud como clave
+- flatten_nested_list debe manejar listas anidadas de un solo nivel
+- Validar que las entradas sean listas válidas
 
 ## Conceptos a Practicar
-- Threading module básico
-- ThreadPoolExecutor para pools de threads
-- Locks para thread safety
+- Manipulación avanzada de listas
+- Comprensiones de listas y diccionarios
+- Iteración simultánea sobre múltiples listas
+- Agrupación y clasificación de datos
 - Manejo de resultados concurrentes

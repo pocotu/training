@@ -1,12 +1,14 @@
-# [F089] Web Scraping Basics
+# [F089] File Operations Basic
 
 ## Problema
 
-Implementa tres funciones para web scraping básico:
+Implementa tres funciones para operaciones básicas con archivos:
 
-1. `scrape_webpage(url)` - extrae título, headers y links de una página
-2. `scrape_table_data(url, table_selector)` - extrae datos de tabla HTML
-3. `scrape_with_session(urls)` - scraping con sesión persistente
+1. `read_file_lines(filename)` - lee archivo y retorna lista de líneas
+2. `write_file_content(filename, content)` - escribe contenido a archivo  
+3. `count_words_in_file(filename)` - cuenta palabras en archivo
+
+**Foundations**: Se enfoca en operaciones básicas de I/O con archivos, conceptos esenciales.
 
 ## Ejemplos
 

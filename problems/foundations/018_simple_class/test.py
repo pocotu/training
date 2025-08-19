@@ -14,8 +14,21 @@ from solution import Dog
 class TestSimpleClass(unittest.TestCase):
 
     def test_dog_bark(self):
-        my_dog = Dog("Buddy")
-        self.assertEqual(my_dog.bark(), "Buddy says woof!")
+        """Test that Dog.bark() returns 'Woof!'"""
+        my_dog = Dog()
+        result = my_dog.bark()
+        self.assertEqual(result, "Woof!")
+    
+    def test_dog_bark_multiple_calls(self):
+        """Test multiple calls to bark()"""
+        my_dog = Dog()
+        self.assertEqual(my_dog.bark(), "Woof!")
+        self.assertEqual(my_dog.bark(), "Woof!")
+    
+    def test_dog_class_instantiation(self):
+        """Test that Dog can be instantiated without arguments"""
+        my_dog = Dog()
+        self.assertIsInstance(my_dog, Dog)
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

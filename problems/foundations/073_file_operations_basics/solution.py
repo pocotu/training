@@ -1,48 +1,21 @@
 """
-Solution for File Operations Basics
+Solution for String Lines Processing
 Problem ID: F073
 """
 
-def write_lines_to_file(filename, lines):
-    # TODO: Implement your solution here
-    pass
-
-def read_lines_from_file(filename):
-    # TODO: Implement your solution here
-    pass
-
-def count_words_in_file(filename):
+def count_lines(text):
+    """
+    Counts non-empty lines in a text string.
+    Returns the number of lines that are not empty (after stripping whitespace).
+    """
     # TODO: Implement your solution here
     pass
 
 def main():
-    # Ejemplos de uso (usando archivos temporales)
-    test_filename = "test_file.txt"
-    test_lines = ["Hello World", "Python Programming", "File Operations"]
-    
-    print("File Operations Examples:")
-    
-    # Write to file
-    write_success = write_lines_to_file(test_filename, test_lines)
-    print(f"Write success: {write_success}")
-    
-    if write_success:
-        # Read from file
-        read_lines = read_lines_from_file(test_filename)
-        print(f"Read lines: {read_lines}")
-        
-        # Count words
-        word_count = count_words_in_file(test_filename)
-        print(f"Word count: {word_count}")
-        
-        # Cleanup
-        try:
-            import os
-            os.remove(test_filename)
-        except:
-            pass
-    
-    return write_success
+    # Ejemplo de uso
+    result = count_lines("Línea 1\nLínea 2\nLínea 3")
+    print(f"Número de líneas: {result}")
+    return result
 
 if __name__ == "__main__":
     result = main()

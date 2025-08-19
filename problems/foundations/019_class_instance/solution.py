@@ -4,20 +4,16 @@ Problem ID: F019
 """
 
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name):
         # TODO: Implement your solution here
-        pass
-    
-    def introduce(self):
-        # TODO: Implement your solution here
+        # Asignar name a self.name
         pass
 
 def main():
     # Ejemplo de uso
-    person = Person("Alice", 25)
-    result = person.introduce()
-    print(f"Persona creada: {result}")
-    return result
+    person = Person("Alice")
+    print(f"Persona creada con nombre: {person.name}")
+    return person
 
 if __name__ == "__main__":
     result = main()

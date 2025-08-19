@@ -11,3 +11,16 @@ Escribe una función llamada `get_substring` que reciba un string `s`, un índic
 Input: s = "Hello, World!", start = 7, end = 12
 Output: "World"
 ```
+
+### Ejemplo 2:
+```
+Input: s = "Python", start = 0, end = 3
+Output: "Pyt"
+```
+
+## Constraints
+
+- La función debe llamarse `get_substring`.
+- Los índices `start` y `end` siempre serán válidos para el string dado.
+- `start` será menor o igual que `end`.
+- `0 ≤ start ≤ end ≤ len(s)`.

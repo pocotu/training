@@ -1,52 +1,45 @@
-# [F087] Multiprocessing Fundamentals
+# [F087] Mathematical Functions
 
 ## Problema
 
-Implementa tres funciones que demuestran conceptos de multiprocessing:
+Implementa tres funciones para operaciones matemáticas básicas:
 
-1. `cpu_intensive_task(numbers)` - procesa números usando múltiples procesos
-2. `process_pool_executor(data, func)` - ejecuta función en pool de procesos
-3. `shared_memory_example()` - demuestra comunicación entre procesos
+1. `calculate_factorial(n)` - calcula factorial de un número
+2. `calculate_power(base, exponent)` - calcula potencia de un número
+3. `calculate_gcd(a, b)` - calcula máximo común divisor
+
+**Foundations**: Se enfoca en operaciones matemáticas fundamentales con algoritmos básicos.
 
 ## Ejemplos
 
-### Función cpu_intensive_task:
-```python
-def is_prime(n):
-    # CPU-intensive function
-    if n < 2: return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0: return False
-    return True
-
-numbers = [982451653, 982451654, 982451655, 982451656]
-results = cpu_intensive_task(numbers)
-print(results)  # [True, False, False, False] - usando múltiples cores
+### Función calculate_factorial:
+```
+Input: calculate_factorial(5)
+Output: 120  # 5! = 5 * 4 * 3 * 2 * 1
 ```
 
-### Función process_pool_executor:
-```python
-data = [1, 4, 9, 16, 25]
-results = process_pool_executor(data, lambda x: x ** 0.5)
-print(results)  # [1.0, 2.0, 3.0, 4.0, 5.0]
+### Función calculate_power:
+```
+Input: calculate_power(2, 3)
+Output: 8  # 2^3 = 8
 ```
 
-### Función shared_memory_example:
-```python
-# Demuestra Queue, Pipe o Value para comunicación
-result = shared_memory_example()
-print(result)  # Datos compartidos entre procesos
+### Función calculate_gcd:
+```
+Input: calculate_gcd(48, 18)
+Output: 6  # GCD de 48 y 18 es 6
 ```
 
 ## Restricciones
-- Usar multiprocessing module
-- process_pool_executor debe usar ProcessPoolExecutor
-- shared_memory_example debe usar Queue o Pipe
-- Demostrar ventaja en tareas CPU-intensivas
-- Manejar serialización de datos correctamente
+- calculate_factorial debe manejar n >= 0, retornar 1 para n = 0
+- calculate_power debe funcionar con exponentes enteros positivos
+- calculate_gcd debe usar algoritmo de Euclides
+- Validar entradas positivas
+- No usar funciones built-in como math.factorial
 
 ## Conceptos a Practicar
-- Multiprocessing vs multithreading
-- ProcessPoolExecutor
-- Comunicación inter-proceso
+- Recursión e iteración
+- Algoritmos matemáticos clásicos
+- Validación de entrada
+- Casos base en recursión
 - CPU-bound vs I/O-bound tasks

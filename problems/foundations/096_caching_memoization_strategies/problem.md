@@ -1,8 +1,14 @@
-# [096 CACHING MEMOIZATION STRATEGIES] 096 Caching Memoization Strategies
+# [F096] Dictionary Lookup Tables
 
 ## Problema
 
-Implementa la funcionalidad requerida para este ejercicio de foundations.
+Implementa tres funciones que usan diccionarios como tablas de búsqueda:
+
+1. `create_lookup_table(keys, values)` - crea tabla de búsqueda desde listas
+2. `cached_calculation(cache, key, calculation_func)` - calcula y guarda en cache
+3. `get_or_compute(cache, key, default_func)` - obtiene de cache o calcula
+
+**Foundations**: Se enfoca en uso de diccionarios para optimización básica y lookup tables.
 
 ## Ejemplos
 

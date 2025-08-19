@@ -1,12 +1,14 @@
-# [F090] Email and SMTP Handling
+# [F090] Data Validation Functions
 
 ## Problema
 
-Implementa tres funciones para manejo de correo electrónico:
+Implementa tres funciones para validación de datos:
 
-1. `send_simple_email(smtp_config, to, subject, body)` - envía email básico
-2. `send_email_with_attachment(smtp_config, to, subject, body, file_path)` - email con adjunto
-3. `email_template_system(template, data, recipients)` - sistema de templates
+1. `validate_email(email)` - valida formato de email usando regex básico
+2. `validate_password_strength(password)` - evalúa fortaleza de contraseña  
+3. `validate_phone_number(phone)` - valida formato de número de teléfono
+
+**Foundations**: Se enfoca en validación y expresiones regulares básicas, conceptos importantes.
 
 ## Ejemplos
 

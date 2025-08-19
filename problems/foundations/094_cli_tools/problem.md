@@ -1,12 +1,14 @@
-# [F094] Command Line Interface Tools
+# [F094] Input Output Functions
 
 ## Problema
 
-Crea una herramienta CLI completa usando argparse:
+Implementa tres funciones para entrada y salida básica:
 
-1. `TaskCLI` - clase principal para la interfaz CLI
-2. Comandos: `create`, `list`, `update`, `delete`, `config`
-3. Soporte para argumentos, opciones y subcomandos
+1. `get_user_input(prompt, input_type)` - solicita entrada del usuario con validación
+2. `format_output(data, format_type)` - formatea datos para salida
+3. `create_menu(options)` - crea menú simple de opciones
+
+**Foundations**: Se enfoca en I/O básico y interacción con usuario, conceptos esenciales.
 
 ## Ejemplos
 

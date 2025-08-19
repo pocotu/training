@@ -26,9 +26,22 @@ class TestArithmeticOperations(unittest.TestCase):
         self.assertEqual(result, expected)
     
     def test_division_by_zero(self):
-        """Test division by zero raises error"""
-        with self.assertRaises(ValueError):
-            perform_operations(10, 0)
+        """Test division by zero returns None for division"""
+        result = perform_operations(10, 0)
+        expected = (10, 10, 0, None)
+        self.assertEqual(result, expected)
+    
+    def test_division_by_zero_negative(self):
+        """Test division by zero with negative number"""
+        result = perform_operations(-5, 0)
+        expected = (-5, -5, 0, None)
+        self.assertEqual(result, expected)
+    
+    def test_floating_point_operations(self):
+        """Test with floating point numbers"""
+        result = perform_operations(7.5, 2.5)
+        expected = (10.0, 5.0, 18.75, 3.0)
+        self.assertEqual(result, expected)
 
 if __name__ == '__main__':
     unittest.main()

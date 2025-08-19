@@ -19,6 +19,24 @@ class TestListCreation(unittest.TestCase):
         expected = [1, 2, 3]
         self.assertEqual(result, expected)
         self.assertIsInstance(result, list)
+    
+    def test_create_list_length(self):
+        """Test that the list has exactly 3 elements"""
+        result = create_list()
+        self.assertEqual(len(result), 3)
+    
+    def test_create_list_element_types(self):
+        """Test that all elements are integers"""
+        result = create_list()
+        for element in result:
+            self.assertIsInstance(element, int)
+    
+    def test_create_list_independence(self):
+        """Test that multiple calls return independent lists"""
+        list1 = create_list()
+        list2 = create_list()
+        list1.append(4)
+        self.assertNotEqual(list1, list2)  # Should be different after modification
 
 if __name__ == '__main__':
     unittest.main()

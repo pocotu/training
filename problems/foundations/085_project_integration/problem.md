@@ -1,46 +1,45 @@
-# [F085] Project Integration and Best Practices
+# [F085] Text Processing Functions
 
 ## Problema
 
-Crea un mini-proyecto integrado que demuestre mejores prácticas:
-1. `ProjectManager` - clase que integre logging, configuración y validación
-2. `create_project_structure()` - cree estructura de archivos estándar
-3. `generate_documentation()` - genere documentación automática
+Crea tres funciones para procesar texto básico:
+1. `count_characters(text)` - cuenta caracteres, excluyendo espacios
+2. `reverse_words(sentence)` - invierte el orden de las palabras
+3. `capitalize_words(text)` - capitaliza la primera letra de cada palabra
+
+**Foundations**: Se enfoca en operaciones básicas de strings, conceptos fundamentales de Python.
 
 ## Ejemplos
 
-### Clase ProjectManager:
-```python
-pm = ProjectManager("Mi Proyecto", {"debug": True, "version": "1.0"})
-pm.log_info("Proyecto iniciado")
-pm.validate_config()
-pm.save_state()
+### Función count_characters:
+```
+Input: count_characters("Hola mundo")
+Output: 9  # No cuenta espacios
 ```
 
-### Función create_project_structure:
+### Función reverse_words:
 ```
-Input: create_project_structure("mi_app")
-Output: True
-# Crea: mi_app/, mi_app/src/, mi_app/tests/, mi_app/docs/, mi_app/config.json
+Input: reverse_words("Hola mundo Python")
+Output: "Python mundo Hola"
 ```
 
-### Función generate_documentation:
+### Función capitalize_words:
 ```
-Input: generate_documentation("mi_app")
-Output: "README.md creado con 150 líneas de documentación"
+Input: capitalize_words("hola mundo python")
+Output: "Hola Mundo Python"
 ```
 
 ## Restricciones
-- ProjectManager debe usar logging configurado apropiadamente
-- Incluir validación de configuración con esquemas
-- create_project_structure debe crear jerarquía completa de directorios
-- generate_documentation debe crear README.md con secciones estándar
-- Seguir PEP 8 para estilo de código
-- Incluir docstrings en formato Google/Sphinx
+- count_characters debe excluir espacios del conteo
+- reverse_words debe mantener un solo espacio entre palabras
+- capitalize_words debe capitalizar solo la primera letra de cada palabra
+- Validar que las entradas sean strings
+- Manejar strings vacíos apropiadamente
+- No usar métodos built-in como title() para capitalize_words
 
 ## Conceptos a Practicar
-- Arquitectura de proyectos Python
-- Logging y configuración
-- Documentación automática
-- Estándares de código y mejores prácticas
+- Manipulación de strings
+- Métodos de strings básicos (split, join)
+- Iteración sobre caracteres
+- Condicionales con strings
 - Integración de múltiples componentes

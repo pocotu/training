@@ -7,7 +7,7 @@ Escribe una función llamada `perform_operations` que reciba dos números, `a` y
 1.  Suma (`a + b`)
 2.  Resta (`a - b`)
 3.  Multiplicación (`a * b`)
-4.  División (`a / b`)
+4.  División (`a / b`) - Si `b` es 0, devolver `None` para esta operación
 
 ## Ejemplos
 
@@ -23,7 +23,14 @@ Input: a = 20, b = 4
 Output: (24, 16, 80, 5.0)
 ```
 
+### Ejemplo 3:
+```
+Input: a = 10, b = 0
+Output: (10, 10, 0, None)
+```
+
 ## Constraints
 
 - La función debe llamarse `perform_operations`.
-- `b` no será cero.
+- Los números `a` y `b` pueden ser enteros o flotantes.
+- Si `b` es 0, la división debe devolver `None`.

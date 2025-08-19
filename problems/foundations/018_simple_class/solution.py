@@ -4,19 +4,16 @@ Problem ID: F018
 """
 
 class Dog:
-    def __init__(self, name):
-        # TODO: Implement your solution here
-        pass
-    
     def bark(self):
         # TODO: Implement your solution here
+        # Debe devolver "Woof!" (no imprimir)
         pass
 
 def main():
     # Ejemplo de uso
-    dog = Dog("Buddy")
+    dog = Dog()
     result = dog.bark()
-    print(f"Perro creado: {result}")
+    print(f"El perro dice: {result}")
     return result
 
 if __name__ == "__main__":

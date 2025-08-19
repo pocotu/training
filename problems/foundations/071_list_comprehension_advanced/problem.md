@@ -2,26 +2,36 @@
 
 ## Problema
 
-Implementa tres funciones que utilizan list comprehensions avanzadas:
-1. `filter_and_square(numbers)` - filtra números pares y los eleva al cuadrado
-2. `nested_multiplication(matrix)` - multiplica todos los elementos de una matriz 2D por 2
-3. `conditional_transform(words)` - convierte a mayúsculas si la longitud es par, a minúsculas si es impar
+Escribe una función llamada `filter_and_square` que reciba una lista de números `numbers` y devuelva una nueva lista con solo los números pares elevados al cuadrado, usando list comprehension.
+
+**Simplificado para Foundations**: Se enfoca en una sola función con list comprehension básica.
 
 ## Ejemplos
 
-### Función filter_and_square:
+### Ejemplo 1:
 ```
 Input: [1, 2, 3, 4, 5, 6]
 Output: [4, 16, 36]  # Solo números pares (2,4,6) elevados al cuadrado
 ```
 
-### Función nested_multiplication:
+### Ejemplo 2:
 ```
-Input: [[1, 2], [3, 4], [5, 6]]
-Output: [[2, 4], [6, 8], [10, 12]]
+Input: [1, 3, 5, 7]
+Output: []  # No hay números pares
 ```
 
-### Función conditional_transform:
+### Ejemplo 3:
+```
+Input: [2, 4, 8]
+Output: [4, 16, 64]
+```
+
+## Restricciones
+
+- `numbers` será una lista de números enteros
+- Usar exclusivamente list comprehension
+- Devolver nueva lista (no modificar original)
+- Manejar lista vacía correctamente
 ```
 Input: ["abc", "hello", "hi", "python"]
 Output: ["ABC", "hello", "HI", "python"]  # len=3,5,2,6 → impar,impar,par,par

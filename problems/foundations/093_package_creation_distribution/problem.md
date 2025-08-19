@@ -1,8 +1,14 @@
-# [093 PACKAGE CREATION DISTRIBUTION] 093 Package Creation Distribution
+# [F093] Module Organization Functions
 
 ## Problema
 
-Implementa la funcionalidad requerida para este ejercicio de foundations.
+Implementa tres funciones que demuestran organización básica de código:
+
+1. `import_and_use(module_name, function_name)` - simula importar y usar función
+2. `create_namespace(functions_dict)` - crea espacio de nombres con funciones
+3. `list_available_functions(namespace)` - lista funciones disponibles en namespace
+
+**Foundations**: Se enfoca en conceptos básicos de módulos y organización de código.
 
 ## Ejemplos
 

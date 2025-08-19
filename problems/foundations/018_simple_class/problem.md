@@ -9,5 +9,13 @@ Define una clase llamada `Dog`. La clase debe tener un método llamado `bark` qu
 ### Ejemplo 1:
 ```
 my_dog = Dog()
-my_dog.bark()  # Output: "Woof!"
+result = my_dog.bark()
+print(result)  # Output: "Woof!"
 ```
+
+## Constraints
+
+- La clase debe llamarse `Dog`.
+- El método debe llamarse `bark`.
+- El método debe **devolver** (return) "Woof!", no imprimirlo.
+- No usar argumentos además de `self`.

@@ -3,15 +3,16 @@ Solution for Sum of a List
 Problem ID: F020
 """
 
-def sum_list(numbers):
+def calculate_sum(numbers):
     # TODO: Implement your solution here
+    # No usar sum() built-in - implementar con bucle
     pass
 
 def main():
     # Ejemplo de uso
     test_list = [1, 2, 3, 4, 5]
-    result = sum_list(test_list)
-    print(f"Suma de {test_list}: {result}")
+    result = calculate_sum(test_list)
+    print(f"Suma manual de {test_list}: {result}")
     return result
 
 if __name__ == "__main__":

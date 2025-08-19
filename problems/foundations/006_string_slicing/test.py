@@ -27,6 +27,21 @@ class TestStringSlicing(unittest.TestCase):
         """Test slicing to end"""
         result = get_substring("Programming", 4, 11)
         self.assertEqual(result, "ramming")
+    
+    def test_get_substring_single_character(self):
+        """Test slicing single character"""
+        result = get_substring("Hello", 1, 2)
+        self.assertEqual(result, "e")
+    
+    def test_get_substring_empty_range(self):
+        """Test slicing with same start and end"""
+        result = get_substring("Test", 2, 2)
+        self.assertEqual(result, "")
+    
+    def test_get_substring_full_string(self):
+        """Test slicing entire string"""
+        result = get_substring("Hello", 0, 5)
+        self.assertEqual(result, "Hello")
 
 if __name__ == '__main__':
     unittest.main()

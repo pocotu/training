@@ -1,27 +1,37 @@
-# [F073] File Operations Basics
+# [F073] String Lines Processing
 
 ## Problema
 
-Implementa tres funciones para operaciones básicas con archivos:
-1. `write_lines_to_file(filename, lines)` - escribe lista de líneas a archivo
-2. `read_lines_from_file(filename)` - lee todas las líneas de un archivo
-3. `count_words_in_file(filename)` - cuenta palabras en un archivo
+Escribe una función llamada `count_lines` que reciba un string `text` con múltiples líneas (separadas por saltos de línea `\n`) y devuelva el número total de líneas no vacías.
+
+**Simplificado para Foundations**: Se enfoca en procesamiento de texto básico en lugar de operaciones de archivos complejas.
 
 ## Ejemplos
 
-### Función write_lines_to_file:
+### Ejemplo 1:
 ```
-Input: write_lines_to_file("test.txt", ["Hola", "Mundo", "Python"])
-Output: True (archivo creado exitosamente)
-```
-
-### Función read_lines_from_file:
-```
-Input: read_lines_from_file("test.txt")
-Output: ["Hola\n", "Mundo\n", "Python\n"]
+Input: count_lines("Línea 1\nLínea 2\nLínea 3")
+Output: 3
 ```
 
-### Función count_words_in_file:
+### Ejemplo 2:
+```
+Input: count_lines("Hola\n\nMundo\n")
+Output: 2  # Una línea vacía no cuenta
+```
+
+### Ejemplo 3:
+```
+Input: count_lines("")
+Output: 0
+```
+
+## Restricciones
+
+- El texto puede contener líneas vacías (solo espacios en blanco)
+- Las líneas vacías no deben contarse
+- Una línea con solo espacios se considera vacía
+- Usar métodos básicos de string (split, strip)
 ```
 Input: count_words_in_file("test.txt") # contenido: "Hola mundo Python es genial"
 Output: 5

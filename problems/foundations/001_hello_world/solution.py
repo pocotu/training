@@ -9,8 +9,9 @@ def hello_world():
 
 
 def main():
-    print("Ejercicio 001_hello_world - Implementación pendiente")
-    return True
+    result = hello_world()
+    print(f"La función dice: {result}")
+    return result
 
 if __name__ == "__main__":
     result = main()

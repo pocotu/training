@@ -1,27 +1,37 @@
-# [F081] Unit Testing Fundamentals
+# [F081] Simple Calculator
 
 ## Problema
 
-Crea una clase `Calculator` y su correspondiente test suite completo:
-1. Clase `Calculator` con métodos: add, subtract, multiply, divide, power
-2. `TestCalculator` con tests para todos los casos (normales y edge cases)
-3. Función `run_test_coverage()` que ejecute y reporte cobertura
+Escribe una función llamada `calculator` que reciba tres parámetros: dos números `a` y `b`, y una operación `operation` (string: "add", "subtract", "multiply", "divide"). La función debe devolver el resultado de la operación.
+
+**Simplificado para Foundations**: Se enfoca en lógica condicional básica y operaciones matemáticas.
 
 ## Ejemplos
 
-### Clase Calculator:
-```python
-calc = Calculator()
-print(calc.add(2, 3))      # 5
-print(calc.divide(10, 2))  # 5.0
-print(calc.power(2, 3))    # 8
+### Ejemplo 1:
+```
+Input: calculator(5, 3, "add")
+Output: 8
 ```
 
-### Test cases:
-```python
-class TestCalculator(unittest.TestCase):
-    def test_add_positive_numbers(self):
-        self.assertEqual(self.calc.add(2, 3), 5)
+### Ejemplo 2:
+```
+Input: calculator(10, 2, "divide")
+Output: 5.0
+```
+
+### Ejemplo 3:
+```
+Input: calculator(4, 3, "multiply")
+Output: 12
+```
+
+## Restricciones
+
+- `a` y `b` serán números (int o float)
+- `operation` será uno de: "add", "subtract", "multiply", "divide"
+- Para división por cero, devolver "Error"
+- Para operación inválida, devolver "Error"
     
     def test_divide_by_zero(self):
         with self.assertRaises(ValueError):

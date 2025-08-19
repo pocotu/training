@@ -2,27 +2,42 @@
 
 ## Problema
 
-Implementa tres funciones usando expresiones regulares:
-1. `validate_email(email)` - valida formato de email
-2. `extract_phone_numbers(text)` - extrae números de teléfono
-3. `clean_text(text)` - limpia caracteres especiales, deja solo letras y espacios
+Escribe una función llamada `validate_email` que reciba un string `email` y devuelva `True` si tiene un formato de email básicamente válido, `False` en caso contrario.
+
+**Criterios básicos para email válido**:
+- Contiene exactamente un símbolo @
+- Tiene al menos un carácter antes del @
+- Tiene al menos un carácter después del @
+- Después del @ contiene al menos un punto
+- Tiene al menos un carácter después del último punto
+
+**Simplificado para Foundations**: Validación básica sin regex compleja.
 
 ## Ejemplos
 
-### Función validate_email:
+### Ejemplo 1:
 ```
 Input: validate_email("usuario@dominio.com")
 Output: True
+```
 
+### Ejemplo 2:
+```
 Input: validate_email("email-invalido")
 Output: False
 ```
 
-### Función extract_phone_numbers:
+### Ejemplo 3:
 ```
-Input: extract_phone_numbers("Llama al 123-456-7890 o al (555) 123-4567")
-Output: ["123-456-7890", "(555) 123-4567"]
+Input: validate_email("test@gmail.org")
+Output: True
 ```
+
+## Restricciones
+
+- No usar expresiones regulares complejas (usar métodos básicos de string)
+- El email será un string válido
+- Considerar solo formato básico (no todas las especificaciones RFC)
 
 ### Función clean_text:
 ```

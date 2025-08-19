@@ -1,27 +1,36 @@
-# [F072] Exception Handling Basics
+# [F072] Try-Except Basics
 
 ## Problema
 
-Implementa tres funciones que manejan diferentes tipos de excepciones:
-1. `safe_division(a, b)` - realiza división manejando ZeroDivisionError
-2. `safe_list_access(lst, index)` - accede a lista manejando IndexError
-3. `safe_int_conversion(value)` - convierte a entero manejando ValueError
+Escribe una función llamada `safe_division` que reciba dos números `a` y `b`, y devuelva el resultado de `a / b`. Si ocurre una división por cero, la función debe capturar la excepción y devolver el string `"Error: División por cero"`.
+
+**Simplificado para Foundations**: Se enfoca en el concepto básico de try-except con un solo caso de uso.
 
 ## Ejemplos
 
-### Función safe_division:
+### Ejemplo 1:
 ```
 Input: safe_division(10, 2)
 Output: 5.0
+```
 
+### Ejemplo 2:
+```
 Input: safe_division(10, 0)
 Output: "Error: División por cero"
 ```
 
-### Función safe_list_access:
+### Ejemplo 3:
 ```
-Input: safe_list_access([1, 2, 3], 1)
-Output: 2
+Input: safe_division(7, 2)
+Output: 3.5
+```
+
+## Restricciones
+
+- `a` y `b` serán números (int o float)
+- Usar try-except para capturar ZeroDivisionError
+- Devolver el string exacto "Error: División por cero" para el caso de error
 
 Input: safe_list_access([1, 2, 3], 5)
 Output: "Error: Índice fuera de rango"

@@ -3,31 +3,33 @@ Test cases for List Comprehension Advanced (Problem F071)
 """
 
 import unittest
-from solution import filter_and_square, nested_multiplication, conditional_transform
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).parent))
+
+from solution import filter_and_square
 
 class TestListComprehensionAdvanced(unittest.TestCase):
 
     def test_filter_and_square(self):
-        """Test filtering even numbers and squaring them"""
+        # Test 1: Lista mixta
         self.assertEqual(filter_and_square([1, 2, 3, 4, 5, 6]), [4, 16, 36])
+        
+        # Test 2: Solo números impares
         self.assertEqual(filter_and_square([1, 3, 5]), [])
+        
+        # Test 3: Solo números pares
         self.assertEqual(filter_and_square([2, 4]), [4, 16])
+        
+        # Test 4: Lista vacía
         self.assertEqual(filter_and_square([]), [])
-
-    def test_nested_multiplication(self):
-        """Test nested list comprehension"""
-        self.assertEqual(nested_multiplication([[1, 2], [3, 4]]), [[2, 4], [6, 8]])
-        self.assertEqual(nested_multiplication([[0]]), [[0]])
-        self.assertEqual(nested_multiplication([]), [])
-        self.assertEqual(nested_multiplication([[1, 2, 3], [4, 5, 6]]), [[2, 4, 6], [8, 10, 12]])
-
-    def test_conditional_transform(self):
-        """Test conditional transformation based on word length"""
-        self.assertEqual(conditional_transform(["abc", "hello", "hi", "python"]), 
-                        ["abc", "hello", "HI", "PYTHON"])
-        self.assertEqual(conditional_transform(["a", "ab"]), ["a", "AB"])
-        self.assertEqual(conditional_transform([]), [])
-        self.assertEqual(conditional_transform(["test"]), ["TEST"])
+        
+        # Test 5: Un solo número par
+        self.assertEqual(filter_and_square([8]), [64])
+        
+        # Test 6: Números negativos
+        self.assertEqual(filter_and_square([-2, -1, 0, 1, 2]), [4, 0, 4])
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

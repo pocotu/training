@@ -2,7 +2,13 @@
 
 ## Problema
 
-Escribe una función llamada `word_frequency` que reciba un string `text` y devuelva un diccionario con la frecuencia de cada palabra. Las palabras deben ser convertidas a minúsculas y se debe ignorar la puntuación básica.
+Escribe una función llamada `word_frequency` que reciba un string `text` y devuelva un diccionario con la frecuencia de cada palabra. 
+
+**Reglas de procesamiento**:
+- Convertir todas las palabras a minúsculas
+- Remover signos de puntuación básicos: .,!?;:
+- Dividir el texto por espacios en blanco
+- Ignorar palabras vacías después del procesamiento
 
 ## Ejemplos
 
@@ -17,6 +23,19 @@ Output: {"hello": 2, "world": 1}
 Input: text = "The quick brown fox"
 Output: {"the": 1, "quick": 1, "brown": 1, "fox": 1}
 ```
+
+### Ejemplo 3:
+```
+Input: text = "Hello, world! Hello world."
+Output: {"hello": 2, "world": 2}
+```
+
+## Restricciones
+
+- El texto será un string válido
+- Se deben remover únicamente los caracteres: .,!?;:
+- Las palabras se separan por espacios en blanco  
+- Resultado debe estar en minúsculas
 
 ## Tags
 dictionary, string, frequency, counting, foundations

@@ -3,7 +3,11 @@ Solution for Bubble Sort
 Problem ID: F044
 """
 
-def bubble_sort(arr):
+def bubble_sort(lst):
+    """
+    Sorts a list in-place using bubble sort algorithm.
+    Modifies the original list and returns None.
+    """
     # TODO: Implement your solution here
     pass
 

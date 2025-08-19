@@ -1,33 +1,31 @@
-# [F100] Capstone Project Integration
+# [F100] Foundations Review Integration
 
 ## Problema
 
-Crea una aplicación completa que integre múltiples conceptos de foundations:
+Crea funciones que integren múltiples conceptos básicos aprendidos en foundations:
 
-**Proyecto**: Sistema de Gestión de Tareas con API Web
+1. `process_student_data(students_list)` - procesa datos de estudiantes usando diccionarios y listas
+2. `create_grade_report(student_data)` - genera reporte usando strings y formateo
+3. `validate_and_store(data, storage)` - valida datos y los almacena en estructura
 
-### Componentes Requeridos:
+**Foundations**: Integra conceptos fundamentales: listas, diccionarios, strings, validación, funciones.
 
-1. **TaskManager Class** - gestión completa de tareas
-2. **RESTful API** - endpoints para CRUD operations  
-3. **Database Integration** - persistencia con SQLite
-4. **Authentication System** - login básico con JWT
-5. **Email Notifications** - notificaciones automáticas
-6. **CLI Interface** - herramienta de línea de comandos
-7. **Configuration Management** - settings centralizados
-8. **Logging System** - registro de actividades
-9. **Unit Tests** - cobertura de testing completa
-10. **Package Structure** - distribución como paquete Python
+## Funcionalidades:
 
-## Funcionalidades Principales:
+### Función process_student_data:
+- Recibe lista de diccionarios con datos de estudiantes
+- Calcula promedios, encuentra mejor/peor estudiante  
+- Retorna estadísticas resumidas
 
-### TaskManager Class:
-```python
-manager = TaskManager(config_file="config.yaml")
-task_id = manager.create_task("Complete project", "high", "2025-08-20")
-manager.update_task(task_id, status="in_progress")
-tasks = manager.get_tasks(filter_by="high")
-```
+### Función create_grade_report:
+- Genera reporte de calificaciones en formato texto
+- Usa formateo de strings para presentación limpia
+- Incluye estadísticas calculadas
+
+### Función validate_and_store:  
+- Valida formato de datos de entrada
+- Almacena datos válidos en estructura de diccionarios
+- Maneja errores de validación apropiadamente
 
 ### API Endpoints:
 ```

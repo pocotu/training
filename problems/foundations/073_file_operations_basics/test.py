@@ -1,54 +1,31 @@
 import unittest
-import os
-from solution import write_lines_to_file, read_lines_from_file, count_words_in_file
+import sys
+from pathlib import Path
 
-class TestFileOperations(unittest.TestCase):
+sys.path.append(str(Path(__file__).parent))
+
+from solution import count_lines
+
+class TestStringLinesProcessing(unittest.TestCase):
     
-    def setUp(self):
-        """Configuración inicial para tests"""
-        self.test_file = "test_file.txt"
-        self.test_lines = ["Primera línea", "Segunda línea", "Tercera línea"]
-    
-    def tearDown(self):
-        """Limpieza después de tests"""
-        if os.path.exists(self.test_file):
-            os.remove(self.test_file)
-    
-    def test_write_lines_to_file(self):
-        """Test escritura de líneas"""
-        result = write_lines_to_file(self.test_file, self.test_lines)
-        self.assertTrue(result)
-        self.assertTrue(os.path.exists(self.test_file))
-    
-    def test_read_lines_from_file_exists(self):
-        """Test lectura de archivo existente"""
-        write_lines_to_file(self.test_file, self.test_lines)
-        lines = read_lines_from_file(self.test_file)
-        self.assertEqual(len(lines), 3)
-        self.assertIn("Primera línea", lines[0])
-    
-    def test_read_lines_from_file_not_exists(self):
-        """Test lectura de archivo inexistente"""
-        lines = read_lines_from_file("archivo_inexistente.txt")
-        self.assertEqual(lines, [])
-    
-    def test_count_words_in_file_exists(self):
-        """Test conteo de palabras en archivo existente"""
-        test_content = ["Hola mundo Python", "Es muy genial programar"]
-        write_lines_to_file(self.test_file, test_content)
-        count = count_words_in_file(self.test_file)
-        self.assertEqual(count, 7)  # Total de palabras
-    
-    def test_count_words_in_file_not_exists(self):
-        """Test conteo de palabras en archivo inexistente"""
-        count = count_words_in_file("archivo_inexistente.txt")
-        self.assertEqual(count, 0)
-    
-    def test_count_words_empty_file(self):
-        """Test conteo en archivo vacío"""
-        write_lines_to_file(self.test_file, [])
-        count = count_words_in_file(self.test_file)
-        self.assertEqual(count, 0)
+    def test_count_lines(self):
+        # Test 1: Líneas normales
+        self.assertEqual(count_lines("Línea 1\nLínea 2\nLínea 3"), 3)
+        
+        # Test 2: Con línea vacía
+        self.assertEqual(count_lines("Hola\n\nMundo\n"), 2)
+        
+        # Test 3: String vacío
+        self.assertEqual(count_lines(""), 0)
+        
+        # Test 4: Una sola línea
+        self.assertEqual(count_lines("Solo una línea"), 1)
+        
+        # Test 5: Líneas con espacios
+        self.assertEqual(count_lines("Línea 1\n   \nLínea 3"), 2)
+        
+        # Test 6: Solo espacios y saltos de línea
+        self.assertEqual(count_lines("\n   \n\n"), 0)
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

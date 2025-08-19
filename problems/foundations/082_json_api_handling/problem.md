@@ -1,42 +1,42 @@
-# [F082] JSON and API Handling
+# [F082] Dictionary Data Processing
 
 ## Problema
 
-Implementa tres funciones para manejo de JSON y APIs:
-1. `process_json_file(filename)` - lee y procesa archivo JSON
-2. `create_api_request(url, data)` - simula request HTTP con datos
-3. `parse_api_response(response)` - procesa respuesta de API
+Escribe una función llamada `process_user_data` que reciba un diccionario `user_data` con información de usuarios y devuelva un diccionario resumen con estadísticas básicas.
+
+**Foundations**: Se enfoca en procesamiento básico de diccionarios y listas, conceptos fundamentales de Python.
 
 ## Ejemplos
 
-### Función process_json_file:
+### Ejemplo 1:
 ```
-# archivo.json: {"usuarios": [{"nombre": "Ana", "edad": 25}]}
-Input: process_json_file("archivo.json")
-Output: {"total_usuarios": 1, "edad_promedio": 25}
-```
-
-### Función create_api_request:
-```
-Input: create_api_request("https://api.ejemplo.com", {"user": "test"})
-Output: {"method": "POST", "url": "https://api.ejemplo.com", "data": {"user": "test"}, "status": "sent"}
+Input: {"users": [{"name": "Ana", "age": 25}, {"name": "Bob", "age": 30}]}
+Output: {"total_users": 2, "average_age": 27.5, "names": ["Ana", "Bob"]}
 ```
 
-### Función parse_api_response:
+### Ejemplo 2:
 ```
-Input: parse_api_response('{"success": true, "data": {"id": 123}}')
-Output: {"is_valid": True, "success": True, "extracted_id": 123}
+Input: {"users": []}
+Output: {"total_users": 0, "average_age": 0, "names": []}
+```
+
+### Ejemplo 3:
+```
+Input: {"users": [{"name": "Charlie", "age": 35}]}
+Output: {"total_users": 1, "average_age": 35.0, "names": ["Charlie"]}
 ```
 
 ## Restricciones
-- Usar módulos json para parsing
-- process_json_file debe manejar FileNotFoundError
-- create_api_request debe simular (no hacer request real)
-- parse_api_response debe validar JSON válido
-- Retornar estructuras de datos apropiadas
+
+- `user_data` será un diccionario con clave "users" (lista de diccionarios)
+- Cada usuario tiene claves "name" y "age"  
+- Si no hay usuarios, average_age debe ser 0
+- Devolver diccionario con las tres claves: "total_users", "average_age", "names"
+- La edad promedio debe ser un float
+- Los nombres deben estar en el mismo orden que en la lista original
 
 ## Conceptos a Practicar
-- Parsing y serialización JSON
-- Manejo de APIs REST
-- Validación de datos
-- Procesamiento de respuestas HTTP
+- Manejo de diccionarios
+- Iteración sobre listas
+- Cálculo de promedios
+- Construcción de estructuras de datos

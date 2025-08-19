@@ -1,12 +1,14 @@
-# [F088] Async Await Introduction
+# [F088] String Manipulation Advanced
 
 ## Problema
 
-Implementa tres funciones asíncronas que demuestran programación async/await:
+Implementa tres funciones para manipulación avanzada de strings:
 
-1. `async_fetch_data(urls)` - simula fetch de múltiples URLs concurrentemente
-2. `async_file_processor(filenames)` - procesa archivos de manera asíncrona
-3. `async_producer_consumer()` - patrón productor-consumidor con asyncio
+1. `remove_duplicates_string(text)` - elimina caracteres duplicados consecutivos
+2. `compress_string(text)` - comprime string usando conteo (ej: "aaa" → "a3")  
+3. `expand_string(compressed)` - expande string comprimido de vuelta
+
+**Foundations**: Se enfoca en algoritmos de procesamiento de strings, conceptos fundamentales.
 
 ## Ejemplos
 

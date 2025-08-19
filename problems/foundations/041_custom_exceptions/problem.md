@@ -2,11 +2,16 @@
 
 ## Problema
 
-Crea tres clases de excepción personalizadas y funciones que las utilicen:
+Crea dos clases de excepción personalizadas y una función que las utilice:
 
-1. `InvalidAgeError` - para edades inválidas (negativas o > 150)
-2. `InsufficientFundsError` - para fondos insuficientes en cuenta
-3. `validate_person(name, age, balance)` - función que valide datos de persona
+1. **InvalidAgeError** - hereda de ValueError, para edades inválidas (< 0 o > 150)
+2. **InsufficientFundsError** - hereda de Exception, para fondos insuficientes  
+3. **validate_person(name, age, balance)** - función que valide datos
+
+### Requisitos específicos:
+- `InvalidAgeError`: debe incluir la edad inválida en el mensaje
+- `InsufficientFundsError`: debe almacenar balance y amount como atributos
+- `validate_person`: debe retornar True si todos los datos son válidos
 
 ## Ejemplos
 

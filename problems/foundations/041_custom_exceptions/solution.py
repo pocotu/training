@@ -5,7 +5,9 @@ Problem ID: F041
 
 class InvalidAgeError(ValueError):
     def __init__(self, age):
-        # TODO: Implement your solution here
+        self.age = age
+        super().__init__(f"Invalid age: {age}. Age must be between 0 and 150.")
+        # TODO: Implement your solution here (if additional logic needed)
         pass
 
 class InsufficientFundsError(Exception):

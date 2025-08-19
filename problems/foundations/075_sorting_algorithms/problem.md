@@ -1,27 +1,37 @@
-# [F075] Algorithm Implementation - Sorting
+# [F075] Simple Sorting
 
 ## Problema
 
-Implementa dos algoritmos de ordenamiento básicos:
-1. `insertion_sort(arr)` - ordena usando insertion sort
-2. `selection_sort(arr)` - ordena usando selection sort
-3. `compare_algorithms(arr)` - compara tiempo de ejecución de ambos
+Escribe una función llamada `simple_sort` que reciba una lista de números `numbers` y devuelva una nueva lista con los elementos ordenados de menor a mayor usando el algoritmo de ordenamiento burbuja (bubble sort) manual.
+
+**Simplificado para Foundations**: Se enfoca en implementar un algoritmo básico de ordenamiento, sin comparaciones de rendimiento.
 
 ## Ejemplos
 
-### Función insertion_sort:
+### Ejemplo 1:
 ```
-Input: insertion_sort([64, 34, 25, 12, 22, 11, 90])
-Output: [11, 12, 22, 25, 34, 64, 90]
-```
-
-### Función selection_sort:
-```
-Input: selection_sort([64, 34, 25, 12, 22, 11, 90])
-Output: [11, 12, 22, 25, 34, 64, 90]
+Input: simple_sort([64, 34, 25, 12, 22])
+Output: [12, 22, 25, 34, 64]
 ```
 
-### Función compare_algorithms:
+### Ejemplo 2:
+```
+Input: simple_sort([5, 2, 8, 1])
+Output: [1, 2, 5, 8]
+```
+
+### Ejemplo 3:
+```
+Input: simple_sort([])
+Output: []
+```
+
+## Restricciones
+
+- `numbers` será una lista de números enteros
+- Implementar algoritmo bubble sort manualmente (no usar sort() ni sorted())
+- Devolver nueva lista sin modificar la original
+- Manejar lista vacía correctamente
 ```
 Input: compare_algorithms([5, 2, 8, 1, 9])
 Output: {"insertion_sort": 0.001, "selection_sort": 0.002}
