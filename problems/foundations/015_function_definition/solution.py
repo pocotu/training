@@ -4,15 +4,10 @@ Problem ID: F015
 """
 
 def my_function():
-    """
-    A simple function that returns a greeting.
-    """
-    return "Hello from my function!"
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 015_function_definition
-    """
     # Ejemplo de uso
     result = my_function()
     print(f"Función dice: {result}")

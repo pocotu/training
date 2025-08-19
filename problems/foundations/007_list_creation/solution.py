@@ -4,15 +4,10 @@ Problem ID: F007
 """
 
 def create_list():
-    """
-    Creates and returns a list containing [1, 2, 3].
-    """
-    return [1, 2, 3]
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 007_list_creation
-    """
     result = create_list()
     print(f"Lista creada: {result}")
     return result

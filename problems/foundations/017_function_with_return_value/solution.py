@@ -4,15 +4,10 @@ Problem ID: F017
 """
 
 def multiply(a, b):
-    """
-    Multiplies two numbers and returns the result.
-    """
-    return a * b
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 017_function_with_return_value
-    """
     # Ejemplo de uso
     result = multiply(4, 6)
     print(f"4 * 6 = {result}")

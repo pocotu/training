@@ -8,23 +8,10 @@ import functools
 from collections import defaultdict
 
 def measure_execution_time(func):
-    """
-    Decorator to measure function execution time.
-    """
-    @functools.wraps(func)
-    def wrapper(*args, **kwargs):
-        start_time = time.time()
-        result = func(*args, **kwargs)
-        end_time = time.time()
-        execution_time = end_time - start_time
-        print(f"{func.__name__} executed in {execution_time:.4f} seconds")
-        return result
-    return wrapper
+    # TODO: Implement your solution here
+    pass
 
 def memoize(func):
-    """
-    Decorator to cache function results.
-    """
     cache = {}
     
     @functools.wraps(func)
@@ -38,37 +25,16 @@ def memoize(func):
 
 @memoize
 def fibonacci_optimized(n):
-    """
-    Optimized Fibonacci using memoization.
-    Args:
-        n (int): position in Fibonacci sequence
-    Returns:
-        int: Fibonacci number at position n
-    """
     if n <= 1:
         return n
     return fibonacci_optimized(n - 1) + fibonacci_optimized(n - 2)
 
 def fibonacci_naive(n):
-    """
-    Naive Fibonacci implementation.
-    Args:
-        n (int): position in Fibonacci sequence
-    Returns:
-        int: Fibonacci number at position n
-    """
     if n <= 1:
         return n
     return fibonacci_naive(n - 1) + fibonacci_naive(n - 2)
 
 def list_comprehension_vs_loop(data):
-    """
-    Compare list comprehension vs traditional loop.
-    Args:
-        data (list): input data
-    Returns:
-        dict: timing comparison results
-    """
     # List comprehension
     start_time = time.time()
     result1 = [x * 2 for x in data if x % 2 == 0]
@@ -90,13 +56,6 @@ def list_comprehension_vs_loop(data):
     }
 
 def optimize_data_structure_access(data_size=1000):
-    """
-    Compare different data structures for lookup operations.
-    Args:
-        data_size (int): size of test data
-    Returns:
-        dict: performance comparison
-    """
     # Create test data
     test_data = list(range(data_size))
     

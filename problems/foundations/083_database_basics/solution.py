@@ -7,21 +7,11 @@ import sqlite3
 import os
 
 class DatabaseManager:
-    """
-    Simple SQLite database manager.
-    """
-    
     def __init__(self, db_name="test.db"):
-        """
-        Initialize database connection.
-        Args:
-            db_name (str): database filename
-        """
-        self.db_name = db_name
-        self.connection = None
+        # TODO: Implement your solution here
+        pass
     
     def connect(self):
-        """Establish database connection."""
         try:
             self.connection = sqlite3.connect(self.db_name)
             self.connection.row_factory = sqlite3.Row
@@ -30,20 +20,11 @@ class DatabaseManager:
             return False
     
     def disconnect(self):
-        """Close database connection."""
         if self.connection:
             self.connection.close()
             self.connection = None
     
     def create_table(self, table_name, columns):
-        """
-        Create table with specified columns.
-        Args:
-            table_name (str): name of the table
-            columns (dict): column definitions
-        Returns:
-            bool: True if successful
-        """
         if not self.connection:
             return False
         
@@ -60,14 +41,6 @@ class DatabaseManager:
             return False
     
     def insert_record(self, table_name, data):
-        """
-        Insert record into table.
-        Args:
-            table_name (str): table name
-            data (dict): data to insert
-        Returns:
-            bool: True if successful
-        """
         if not self.connection:
             return False
         
@@ -84,14 +57,6 @@ class DatabaseManager:
             return False
     
     def select_records(self, table_name, where_clause=None):
-        """
-        Select records from table.
-        Args:
-            table_name (str): table name
-            where_clause (str): optional WHERE clause
-        Returns:
-            list: list of records
-        """
         if not self.connection:
             return []
         
@@ -106,15 +71,6 @@ class DatabaseManager:
             return []
     
     def update_record(self, table_name, data, where_clause):
-        """
-        Update records in table.
-        Args:
-            table_name (str): table name
-            data (dict): data to update
-            where_clause (str): WHERE clause
-        Returns:
-            bool: True if successful
-        """
         if not self.connection:
             return False
         
@@ -128,14 +84,6 @@ class DatabaseManager:
             return False
     
     def delete_record(self, table_name, where_clause):
-        """
-        Delete records from table.
-        Args:
-            table_name (str): table name
-            where_clause (str): WHERE clause
-        Returns:
-            bool: True if successful
-        """
         if not self.connection:
             return False
         
@@ -148,9 +96,6 @@ class DatabaseManager:
             return False
 
 def main():
-    """
-    Función principal para 083_database_basics
-    """
     print("Database Basics Examples:")
     
     # Create database manager

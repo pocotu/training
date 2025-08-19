@@ -4,33 +4,15 @@ Problem ID: F047
 """
 
 class Animal:
-    """
-    Clase base Animal
-    """
     def make_sound(self):
-        """
-        Método para hacer sonido
-        Returns:
-            str: sonido genérico del animal
-        """
-        return "Some generic animal sound"
+        # TODO: Implement your solution here
+        pass
 
 class Dog(Animal):
-    """
-    Clase Dog que hereda de Animal
-    """
     def make_sound(self):
-        """
-        Método sobrescrito para hacer sonido de perro
-        Returns:
-            str: sonido del perro
-        """
         return "Woof!"
 
 def main():
-    """
-    Función principal para 047_class_inheritance
-    """
     # Ejemplos de uso
     animal = Animal()
     print(f"Animal sound: {animal.make_sound()}")

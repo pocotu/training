@@ -4,32 +4,10 @@ Problem ID: F060
 """
 
 def calculate(num1, num2, operation):
-    """
-    Performs basic mathematical operations.
-    Args:
-        num1 (float): first number
-        num2 (float): second number
-        operation (str): operation to perform (+, -, *, /)
-    Returns:
-        float or str: result of the operation or "Error" for invalid operations
-    """
-    if operation == '+':
-        return num1 + num2
-    elif operation == '-':
-        return num1 - num2
-    elif operation == '*':
-        return num1 * num2
-    elif operation == '/':
-        if num2 == 0:
-            return "Error"
-        return num1 / num2
-    else:
-        return "Error"
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 060_simple_calculator
-    """
     # Ejemplos de uso
     test_cases = [
         (10, 5, '+'),

@@ -4,15 +4,10 @@ Problem ID: F005
 """
 
 def get_string_length(text):
-    """
-    Returns the length of a string.
-    """
-    return len(text)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 005_string_length
-    """
     test_string = "Python Programming"
     result = get_string_length(test_string)
     print(f"Longitud de '{test_string}': {result}")

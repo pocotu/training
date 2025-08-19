@@ -4,33 +4,10 @@ Problem ID: F058
 """
 
 def transpose_matrix(matrix):
-    """
-    Transposes a matrix (rows become columns).
-    Args:
-        matrix (list): list of lists representing a matrix
-    Returns:
-        list: transposed matrix
-    """
-    if not matrix or not matrix[0]:
-        return []
-    
-    rows = len(matrix)
-    cols = len(matrix[0])
-    
-    # Crear matriz transpuesta
-    transposed = []
-    for j in range(cols):
-        new_row = []
-        for i in range(rows):
-            new_row.append(matrix[i][j])
-        transposed.append(new_row)
-    
-    return transposed
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 058_matrix_transpose
-    """
     # Ejemplo de uso
     test_matrix = [
         [1, 2, 3],

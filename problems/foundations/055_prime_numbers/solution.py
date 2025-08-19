@@ -4,33 +4,10 @@ Problem ID: F055
 """
 
 def is_prime(n):
-    """
-    Checks if a number is prime.
-    Args:
-        n (int): number to check
-    Returns:
-        bool: True if prime, False otherwise
-    """
-    if n < 2:
-        return False
-    
-    if n == 2:
-        return True
-    
-    if n % 2 == 0:
-        return False
-    
-    # Check odd divisors up to sqrt(n)
-    for i in range(3, int(n**0.5) + 1, 2):
-        if n % i == 0:
-            return False
-    
-    return True
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 055_prime_numbers
-    """
     # Ejemplo de uso
     test_numbers = [2, 3, 4, 5, 17, 25, 29, 100]
     

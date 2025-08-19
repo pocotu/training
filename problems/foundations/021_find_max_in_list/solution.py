@@ -4,17 +4,10 @@ Problem ID: F021
 """
 
 def find_max(lst):
-    """
-    Finds the maximum element in a list.
-    """
-    if not lst:
-        return None
-    return max(lst)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 021_find_max_in_list
-    """
     # Ejemplo de uso
     test_list = [1, 2, 3, 4, 5]
     result = find_max(test_list)

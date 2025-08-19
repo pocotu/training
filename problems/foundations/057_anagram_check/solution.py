@@ -4,29 +4,10 @@ Problem ID: F057
 """
 
 def are_anagrams(str1, str2):
-    """
-    Checks if two strings are anagrams.
-    Args:
-        str1 (str): first string
-        str2 (str): second string
-    Returns:
-        bool: True if anagrams, False otherwise
-    """
-    # Normalizar strings: minúsculas, remover espacios
-    str1 = str1.lower().replace(" ", "")
-    str2 = str2.lower().replace(" ", "")
-    
-    # Si tienen diferente longitud, no pueden ser anagramas
-    if len(str1) != len(str2):
-        return False
-    
-    # Comparar caracteres ordenados
-    return sorted(str1) == sorted(str2)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 057_anagram_check
-    """
     # Ejemplos de uso
     test_cases = [
         ("listen", "silent"),

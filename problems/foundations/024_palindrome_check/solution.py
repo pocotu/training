@@ -4,17 +4,10 @@ Problem ID: F024
 """
 
 def is_palindrome(s):
-    """
-    Checks if a string is a palindrome.
-    """
-    # Convertir a minúsculas y eliminar espacios para comparación más robusta
-    clean_s = s.lower().replace(' ', '')
-    return clean_s == clean_s[::-1]
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 024_palindrome_check
-    """
     # Ejemplo de uso
     test_string = "racecar"
     result = is_palindrome(test_string)

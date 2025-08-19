@@ -4,15 +4,10 @@ Problem ID: F035
 """
 
 def get_intersection(set1, set2):
-    """
-    Returns the intersection of two sets.
-    """
-    return set(set1) & set(set2)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 035_set_operations_intersection
-    """
     # Ejemplo de uso
     set1 = [1, 2, 3, 4]
     set2 = [3, 4, 5, 6]

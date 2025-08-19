@@ -4,18 +4,10 @@ Problem ID: F013
 """
 
 def sum_list(numbers):
-    """
-    Sums all numbers in a list using a for loop.
-    """
-    total = 0
-    for num in numbers:
-        total += num
-    return total
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 013_for_loop
-    """
     # Ejemplo de uso
     test_list = [1, 2, 3, 4, 5]
     result = sum_list(test_list)

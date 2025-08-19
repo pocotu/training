@@ -4,18 +4,10 @@ Problem ID: F008
 """
 
 def get_list_element(lst, index):
-    """
-    Returns the element at the given index from the list.
-    """
-    if 0 <= index < len(lst):
-        return lst[index]
-    else:
-        raise IndexError("Index out of range")
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 008_list_indexing
-    """
     # Ejemplo de uso
     test_list = [10, 20, 30, 40, 50]
     result = get_list_element(test_list, 2)

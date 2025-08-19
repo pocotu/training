@@ -4,16 +4,10 @@ Problem ID: F006
 """
 
 def get_substring(s, start, end):
-    """
-    Returns a substring from start to end-1.
-    """
-    return s[start:end]
-
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 006_string_slicing
-    """
     # Ejemplo de uso
     test_string = "Hello, World!"
     result = get_substring(test_string, 7, 12)

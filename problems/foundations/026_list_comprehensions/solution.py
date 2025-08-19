@@ -4,15 +4,10 @@ Problem ID: F026
 """
 
 def square_numbers(numbers):
-    """
-    Returns a list of squared numbers using list comprehension.
-    """
-    return [num ** 2 for num in numbers]
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 026_list_comprehensions
-    """
     # Ejemplo de uso
     test_list = [1, 2, 3, 4, 5]
     result = square_numbers(test_list)

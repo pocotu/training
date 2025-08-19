@@ -7,14 +7,6 @@ from collections import deque, Counter
 from typing import List, Any
 
 def sliding_window_max(arr: List[int], window_size: int) -> List[int]:
-    """
-    Encuentra el máximo en cada ventana deslizante usando deque
-    Args:
-        arr: lista de números
-        window_size: tamaño de la ventana
-    Returns:
-        lista con el máximo de cada ventana
-    """
     if not arr or window_size <= 0 or window_size > len(arr):
         return []
     
@@ -40,13 +32,6 @@ def sliding_window_max(arr: List[int], window_size: int) -> List[int]:
     return result
 
 def palindrome_checker_deque(text: str) -> bool:
-    """
-    Verifica si un texto es palíndromo usando deque
-    Args:
-        text: texto a verificar
-    Returns:
-        True si es palíndromo, False caso contrario
-    """
     # Limpiar texto: solo letras y números, convertir a minúsculas
     clean_text = ''.join(char.lower() for char in text if char.isalnum())
     
@@ -59,13 +44,6 @@ def palindrome_checker_deque(text: str) -> bool:
     return True
 
 def counter_analysis(data: List[Any]) -> dict:
-    """
-    Analiza la frecuencia de elementos usando Counter
-    Args:
-        data: lista de elementos
-    Returns:
-        diccionario con análisis de frecuencia
-    """
     counter = Counter(data)
     
     if not counter:
@@ -84,9 +62,6 @@ def counter_analysis(data: List[Any]) -> dict:
     }
 
 def main():
-    """
-    Función principal para 049_deque_advanced_collections
-    """
     # Ejemplo sliding window max
     arr = [1, 3, -1, -3, 5, 3, 6, 7]
     window_max = sliding_window_max(arr, 3)

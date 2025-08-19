@@ -1,7 +1,4 @@
 def main():
-    """
-    Función principal del ejercicio
-    """
     # TODO: Implementar la lógica principal del ejercicio
     pass
 

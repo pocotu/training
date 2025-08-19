@@ -4,19 +4,8 @@ Problem ID: F003
 """
 
 def perform_operations(a, b):
-    """
-    Performs arithmetic operations on two numbers.
-    Returns tuple with: (sum, difference, product, quotient)
-    """
-    if b == 0:
-        raise ValueError("Cannot divide by zero")
-    
-    sum_result = a + b
-    difference = a - b
-    product = a * b
-    quotient = a / b
-    
-    return (sum_result, difference, product, quotient)
+    # TODO: Implement your solution here
+    pass
 
 def main():
     """

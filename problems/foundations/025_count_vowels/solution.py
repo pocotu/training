@@ -4,16 +4,10 @@ Problem ID: F025
 """
 
 def count_vowels(s):
-    """
-    Counts the number of vowels in a string.
-    """
-    vowels = 'aeiouAEIOU'
-    return sum(1 for char in s if char in vowels)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 025_count_vowels
-    """
     # Ejemplo de uso
     test_string = "hello world"
     result = count_vowels(test_string)

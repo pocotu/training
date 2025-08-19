@@ -4,55 +4,23 @@ Problem ID: F074
 """
 
 class Student:
-    """
-    A simple Student class to demonstrate OOP concepts.
-    """
-    
     def __init__(self, name, age):
-        """
-        Initialize a new student.
-        Args:
-            name (str): student's name
-            age (int): student's age
-        """
-        self.name = name
-        self.age = age
-        self.grades = []
+        # TODO: Implement your solution here
+        pass
     
     def add_grade(self, grade):
-        """
-        Add a grade to the student's record.
-        Args:
-            grade (float): grade to add
-        """
-        if 0 <= grade <= 100:
-            self.grades.append(grade)
-        else:
-            print("Grade must be between 0 and 100")
+        # TODO: Implement your solution here
+        pass
     
     def get_average(self):
-        """
-        Calculate the average grade.
-        Returns:
-            float: average grade or 0 if no grades
-        """
-        if not self.grades:
-            return 0
-        return sum(self.grades) / len(self.grades)
+        # TODO: Implement your solution here
+        pass
     
     def get_info(self):
-        """
-        Get student information.
-        Returns:
-            str: formatted student information
-        """
-        average = self.get_average()
-        return f"{self.name} ({self.age} años) - Promedio: {average:.1f}"
+        # TODO: Implement your solution here
+        pass
 
 def main():
-    """
-    Función principal para 074_oop_basics
-    """
     # Ejemplo de uso
     print("OOP Basics Example:")
     

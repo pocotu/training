@@ -4,15 +4,10 @@ Problem ID: F034
 """
 
 def get_union(set1, set2):
-    """
-    Returns the union of two sets.
-    """
-    return set(set1) | set(set2)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 034_set_operations_union
-    """
     # Ejemplo de uso
     set1 = [1, 2, 3]
     set2 = [3, 4, 5]

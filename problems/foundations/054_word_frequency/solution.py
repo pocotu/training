@@ -4,27 +4,10 @@ Problem ID: F054
 """
 
 def word_frequency(text):
-    """
-    Counts the frequency of words in a text.
-    Args:
-        text (str): input text
-    Returns:
-        dict: dictionary with word frequencies
-    """
-    # Limpiar texto: minúsculas, dividir por espacios, remover puntuación
-    import re
-    words = re.findall(r'\b\w+\b', text.lower())
-    
-    frequency = {}
-    for word in words:
-        frequency[word] = frequency.get(word, 0) + 1
-    
-    return frequency
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 054_word_frequency
-    """
     # Ejemplo de uso
     test_text = "hello world hello python world"
     result = word_frequency(test_text)

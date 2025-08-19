@@ -4,15 +4,10 @@ Problem ID: F020
 """
 
 def sum_list(numbers):
-    """
-    Returns the sum of all numbers in a list.
-    """
-    return sum(numbers)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 020_sum_of_a_list
-    """
     # Ejemplo de uso
     test_list = [1, 2, 3, 4, 5]
     result = sum_list(test_list)

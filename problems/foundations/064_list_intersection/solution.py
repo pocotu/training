@@ -4,26 +4,10 @@ Problem ID: F064
 """
 
 def find_intersection(list1, list2):
-    """
-    Finds the intersection of two lists (common elements).
-    Args:
-        list1 (list): first list
-        list2 (list): second list
-    Returns:
-        list: list of common elements (without duplicates)
-    """
-    # Convert to sets to find intersection, then back to list
-    set1 = set(list1)
-    set2 = set(list2)
-    intersection = set1 & set2
-    
-    # Return as sorted list for consistency
-    return sorted(list(intersection))
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 064_list_intersection
-    """
     # Ejemplos de uso
     test_cases = [
         ([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]),

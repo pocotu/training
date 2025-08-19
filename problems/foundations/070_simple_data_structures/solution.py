@@ -4,77 +4,58 @@ Problem ID: F070
 """
 
 class SimpleStack:
-    """
-    A simple stack implementation using a list.
-    """
-    
     def __init__(self):
-        """Initialize empty stack."""
-        self.items = []
+        # TODO: Implement your solution here
+        pass
     
     def push(self, item):
-        """Add item to top of stack."""
-        self.items.append(item)
+        # TODO: Implement your solution here
+        pass
     
     def pop(self):
-        """Remove and return top item from stack."""
-        if self.is_empty():
-            return None
-        return self.items.pop()
+        # TODO: Implement your solution here
+        pass
     
     def peek(self):
-        """Return top item without removing it."""
-        if self.is_empty():
-            return None
-        return self.items[-1]
+        # TODO: Implement your solution here
+        pass
     
     def is_empty(self):
-        """Check if stack is empty."""
-        return len(self.items) == 0
+        # TODO: Implement your solution here
+        pass
     
     def size(self):
-        """Return number of items in stack."""
-        return len(self.items)
+        # TODO: Implement your solution here
+        pass
 
 
 class SimpleQueue:
-    """
-    A simple queue implementation using a list.
-    """
-    
     def __init__(self):
-        """Initialize empty queue."""
-        self.items = []
+        # TODO: Implement your solution here
+        pass
     
     def enqueue(self, item):
-        """Add item to rear of queue."""
-        self.items.append(item)
+        # TODO: Implement your solution here
+        pass
     
     def dequeue(self):
-        """Remove and return front item from queue."""
-        if self.is_empty():
-            return None
-        return self.items.pop(0)
+        # TODO: Implement your solution here
+        pass
     
     def front(self):
-        """Return front item without removing it."""
-        if self.is_empty():
-            return None
-        return self.items[0]
+        # TODO: Implement your solution here
+        pass
     
     def is_empty(self):
-        """Check if queue is empty."""
-        return len(self.items) == 0
+        # TODO: Implement your solution here
+        pass
     
     def size(self):
-        """Return number of items in queue."""
-        return len(self.items)
+        # TODO: Implement your solution here
+        pass
 
 
 def main():
-    """
-    Función principal para 070_simple_data_structures
-    """
     # Test Stack
     print("Testing Stack:")
     stack = SimpleStack()

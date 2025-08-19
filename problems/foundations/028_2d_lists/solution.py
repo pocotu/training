@@ -4,18 +4,10 @@ Problem ID: F028
 """
 
 def get_matrix_element(matrix, row, col):
-    """
-    Gets an element from a 2D list (matrix) at the specified row and column.
-    """
-    if 0 <= row < len(matrix) and 0 <= col < len(matrix[row]):
-        return matrix[row][col]
-    else:
-        return None
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 028_2d_lists
-    """
     # Ejemplo de uso
     test_matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     result = get_matrix_element(test_matrix, 1, 2)

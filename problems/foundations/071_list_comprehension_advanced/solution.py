@@ -4,39 +4,18 @@ Problem ID: F071
 """
 
 def filter_and_square(numbers):
-    """
-    Filters even numbers and squares them using list comprehension.
-    Args:
-        numbers (list): list of integers
-    Returns:
-        list: squared even numbers
-    """
-    return [num ** 2 for num in numbers if num % 2 == 0]
+    # TODO: Implement your solution here
+    pass
 
 def nested_multiplication(matrix):
-    """
-    Multiplies all elements in a 2D matrix by 2 using nested comprehension.
-    Args:
-        matrix (list): 2D matrix (list of lists)
-    Returns:
-        list: new matrix with all elements multiplied by 2
-    """
-    return [[element * 2 for element in row] for row in matrix]
+    # TODO: Implement your solution here
+    pass
 
 def conditional_transform(words):
-    """
-    Transforms words based on length: uppercase if even length, lowercase if odd.
-    Args:
-        words (list): list of strings
-    Returns:
-        list: transformed strings
-    """
-    return [word.upper() if len(word) % 2 == 0 else word.lower() for word in words]
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 071_list_comprehension_advanced
-    """
     # Ejemplos de uso
     print("List Comprehension Advanced Examples:")
     

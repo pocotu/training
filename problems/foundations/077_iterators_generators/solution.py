@@ -4,65 +4,27 @@ Problem ID: F077
 """
 
 def number_generator(start, end):
-    """
-    Generator that yields numbers from start to end.
-    Args:
-        start (int): starting number
-        end (int): ending number
-    Yields:
-        int: numbers from start to end
-    """
-    current = start
-    while current <= end:
-        yield current
-        current += 1
+    # TODO: Implement your solution here
+    pass
 
 def fibonacci_generator(n):
-    """
-    Generator that yields first n Fibonacci numbers.
-    Args:
-        n (int): number of Fibonacci numbers to generate
-    Yields:
-        int: Fibonacci numbers
-    """
-    a, b = 0, 1
-    count = 0
-    
-    while count < n:
-        yield a
-        a, b = b, a + b
-        count += 1
+    # TODO: Implement your solution here
+    pass
 
-class CountdownIterator:
-    """
-    Iterator that counts down from a given number.
-    """
-    
+class CountdownIterator:    
     def __init__(self, start):
-        """
-        Initialize countdown iterator.
-        Args:
-            start (int): starting number
-        """
-        self.start = start
+        # TODO: Implement your solution here
+        pass
     
     def __iter__(self):
-        """Return iterator object."""
-        return self
+        # TODO: Implement your solution here
+        pass
     
     def __next__(self):
-        """Return next value in countdown."""
-        if self.start <= 0:
-            raise StopIteration
-        
-        current = self.start
-        self.start -= 1
-        return current
+        # TODO: Implement your solution here
+        pass
 
 def main():
-    """
-    Función principal para 077_iterators_generators
-    """
     print("Iterators and Generators Examples:")
     
     # Number generator

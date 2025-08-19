@@ -4,15 +4,10 @@ Problem ID: F037
 """
 
 def split_string(text, separator):
-    """
-    Splits a string into a list using the split() method.
-    """
-    return text.split(separator)
+    # TODO: Implement your solution here
+    pass
 
 def main():
-    """
-    Función principal para 037_string_split_method
-    """
     # Ejemplo de uso
     test_text = "apple,banana,cherry"
     result = split_string(test_text, ',')

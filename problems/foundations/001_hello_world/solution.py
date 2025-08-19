@@ -4,16 +4,11 @@ Problem ID: F001
 """
 
 def hello_world():
-    """
-    Returns the string "Hello, World!".
-    """
-    return "Hello, World!"
+    # TODO: Implement your solution here
+    pass
 
 
 def main():
-    """
-    Función principal para 001_hello_world
-    """
     print("Ejercicio 001_hello_world - Implementación pendiente")
     return True
 
